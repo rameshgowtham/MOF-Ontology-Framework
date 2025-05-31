@@ -1,0 +1,3897 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/s_karthick/ontologies/2025/3/untitled-ontology-20/"
+     xml:base="http://www.semanticweb.org/s_karthick/ontologies/2025/3/untitled-ontology-20/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://www.mofontology.amrita.edu/terms#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/s_karthick/ontologies/2025/3/untitled-ontology-20"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#affects -->
+
+    <owl:ObjectProperty rdf:about="http://www.mofontology.amrita.edu/terms#affects">
+        <rdfs:comment>SynthesisParameters affects Properties and Properties affects Applications</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#dissolvesIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.mofontology.amrita.edu/terms#dissolvesIn">
+        <rdfs:domain rdf:resource="https://w3id.org/nfdi4cat/voc4cat_0007247"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46787"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#employs -->
+
+    <owl:ObjectProperty rdf:about="http://www.mofontology.amrita.edu/terms#employs">
+        <rdfs:comment>Application employs ApplicationInstruments and Characterization employs CharacterizationInstruments and SynthesisParameters employs SynthesisInstruments</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#hasApplications -->
+
+    <owl:ObjectProperty rdf:about="http://www.mofontology.amrita.edu/terms#hasApplications">
+        <rdfs:domain rdf:resource="http://www.mofontology.amrita.edu/terms#MOF"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33232"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#hasProperties -->
+
+    <owl:ObjectProperty rdf:about="http://www.mofontology.amrita.edu/terms#hasProperties">
+        <rdfs:domain rdf:resource="http://www.mofontology.amrita.edu/terms#MOF"/>
+        <rdfs:range rdf:resource="http://www.mofontology.amrita.edu/terms#Properties"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#isAnalyzedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.mofontology.amrita.edu/terms#isAnalyzedBy">
+        <rdfs:domain rdf:resource="http://www.mofontology.amrita.edu/terms#MOF"/>
+        <rdfs:range rdf:resource="http://www.mofontology.amrita.edu/terms#CharacterizationInstruments"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#isProducedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.mofontology.amrita.edu/terms#isProducedBy">
+        <rdfs:domain rdf:resource="http://www.mofontology.amrita.edu/terms#MOF"/>
+        <rdfs:range rdf:resource="https://w3id.org/nfdi4cat/voc4cat_0000045"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#undergoes -->
+
+    <owl:ObjectProperty rdf:about="http://www.mofontology.amrita.edu/terms#undergoes">
+        <rdfs:domain rdf:resource="http://www.mofontology.amrita.edu/terms#MOF"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/NCIT_C62606"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#yields -->
+
+    <owl:ObjectProperty rdf:about="http://www.mofontology.amrita.edu/terms#yields">
+        <rdfs:range rdf:resource="http://www.mofontology.amrita.edu/terms#Properties"/>
+        <rdfs:comment>Characterization yields Properties and CharacterizationInstruments yields Properties</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#hasRange -->
+
+    <owl:DatatypeProperty rdf:about="http://www.mofontology.amrita.edu/terms#hasRange"/>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#hasValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.mofontology.amrita.edu/terms#hasValue"/>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#hasValues -->
+
+    <owl:DatatypeProperty rdf:about="http://www.mofontology.amrita.edu/terms#hasValues"/>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#unit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.mofontology.amrita.edu/terms#unit"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://champ-project.org/images/ontology/cao.owl#CAO_000094 -->
+
+    <owl:Class rdf:about="http://champ-project.org/images/ontology/cao.owl#CAO_000094">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/i40/sto#Sensing"/>
+        <rdfs:comment>A device that detects chemical substances and converts their presence or concentration into a measurable signal using a transducer and transmitter.</rdfs:comment>
+        <rdfs:label>Chemical Sensors</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/OEO_00000016 -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/OEO_00000016">
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21159"/>
+        <rdfs:comment>A fuel cell is a generator that converts chemical energy into electricity using redox reactions.</rdfs:comment>
+        <rdfs:label>Fuel Cells</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/OEO_00000032 -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/OEO_00000032">
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21159"/>
+        <rdfs:comment>A photovoltaic cell (PV cell) is a generator that converts solar energy into electrical energy.</rdfs:comment>
+        <rdfs:label>Photovoltaic Cells</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/OEO_00000248 -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/OEO_00000248">
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21159"/>
+        <rdfs:comment>A lithium-ion battery is a battery that is rechargeable and in which lithium ions move from the negative electrode to the positive electrode during discharge, and back when charging. Li-ion batteries use an intercalated lithium compound as one electrode material.</rdfs:comment>
+        <rdfs:label>Lithium Ion Battery</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/OEO_00010138 -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/OEO_00010138">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#GasStorageAndSeperation"/>
+        <rdfs:comment>Carbon capture is a process that captures carbon dioxide from a gas.</rdfs:comment>
+        <rdfs:label>Carbon Dioxide Capture</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://openenergy-platform.org/ontology/oeo/OEO_00140069 -->
+
+    <owl:Class rdf:about="http://openenergy-platform.org/ontology/oeo/OEO_00140069">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000012"/>
+        <rdfs:comment>Value measured at or modelled for exactly one 0-dim temporal region, referenced by a time stamp, e.g. to represent a time step in a time series</rdfs:comment>
+        <rdfs:label>Instantaneous</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.allotrope.org/ontologies/equipment#AFE_0000816 -->
+
+    <owl:Class rdf:about="http://purl.allotrope.org/ontologies/equipment#AFE_0000816">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#LiquidPhaseInstruments"/>
+        <rdfs:comment>An oven is a device for heating an enclosed space.</rdfs:comment>
+        <rdfs:label>Oven</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.allotrope.org/ontologies/quality#AFQ_0000300 -->
+
+    <owl:Class rdf:about="http://purl.allotrope.org/ontologies/quality#AFQ_0000300">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#FlatGeometries"/>
+        <rdfs:comment>A flake particle shape is a shape of particle with small width and similar height and length.</rdfs:comment>
+        <rdfs:label>Flake</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.allotrope.org/ontologies/quality#AFQ_0000311 -->
+
+    <owl:Class rdf:about="http://purl.allotrope.org/ontologies/quality#AFQ_0000311">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000051"/>
+        <rdfs:comment>A particle shape is a shape quality of a particle.</rdfs:comment>
+        <rdfs:label>Particle Shape</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.allotrope.org/ontologies/result#AFR_0002027 -->
+
+    <owl:Class rdf:about="http://purl.allotrope.org/ontologies/result#AFR_0002027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000117"/>
+        <rdfs:comment>Particle size (datum) is a size datum that quantifies the dimensions of an individual particle.</rdfs:comment>
+        <rdfs:label>Particle Size</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_15377 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_15377">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_48356"/>
+        <rdfs:comment>An oxygen hydride consisting of an oxygen atom that is covalently bonded to two hydrogen atoms</rdfs:comment>
+        <rdfs:label>Water</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_15882 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_15882">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_48356"/>
+        <rdfs:comment>An organic hydroxy compound that consists of benzene bearing a single hydroxy substituent. The parent of the class of phenols.</rdfs:comment>
+        <rdfs:label>Phenol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_16227 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_16227">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#OrganicLinker"/>
+        <rdfs:comment>An azaarene comprising a benzene core in which one -CH group is replaced by a nitrogen atom. It is the parent compound of the class pyridines.</rdfs:comment>
+        <rdfs:label>Pyridine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_17790 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_17790">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30879"/>
+        <rdfs:comment>The primary alcohol that is the simplest aliphatic alcohol, comprising a methyl and an alcohol group.</rdfs:comment>
+        <rdfs:label>Methanol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_22695 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_22695">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#Modulator"/>
+        <rdfs:comment>A molecular entity having an available pair of electrons capable of forming a covalent bond with a hydron (Bronsted base) or with the vacant orbital of some other molecular entity (Lewis base).</rdfs:comment>
+        <rdfs:label>Base</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_24839 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24839">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#Modulator"/>
+        <rdfs:label>Inorganic Salts</rdfs:label>
+        <rdfs:label>Ionic compounds composed of metal cations and non-metal anions, often used as sources of metal ions in MOF synthesis to facilitate the formation of the metal-organic framework.</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_25213 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_25213">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/nfdi4cat/voc4cat_0007247"/>
+        <rdfs:comment>Positively charged metal ions dissolved in a reaction medium that act as central nodes for MOF framework formation.</rdfs:comment>
+        <rdfs:label>Metal Cations</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_25944 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_25944">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001442"/>
+        <rdfs:comment>A substance intended to kill pests. In common usage, substances used for controlling, preventing, or destroying animal, microbiological or plant pests.</rdfs:comment>
+        <rdfs:label>Pesticide</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_26214 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_26214">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#OrganicLinker"/>
+        <rdfs:comment>Natural pigments containing a fundamental skeleton of four pyrrole nuclei united through the alpha-positions by four methine groups to form a macrocyclic structure.</rdfs:comment>
+        <rdfs:label>Porphyrins</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_30879 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30879">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_48356"/>
+        <rdfs:comment>A compound in which a hydroxy group, -OH, is attached to a saturated carbon atom.</rdfs:comment>
+        <rdfs:label>Alcohol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_32952 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_32952">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_48356"/>
+        <rdfs:comment>A compound formally derived from ammonia by replacing one, two or three hydrogen atoms by hydrocarbyl groups.</rdfs:comment>
+        <rdfs:label>Amine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33232 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33232">
+        <owl:disjointWith rdf:resource="https://w3id.org/nfdi4cat/voc4cat_0000045"/>
+        <rdfs:comment>Intended use of the molecular entity or part thereof by humans.</rdfs:comment>
+        <rdfs:label>Application</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33287 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33287">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001442"/>
+        <rdfs:comment>A fertilizer is any substance that is added to soil or water to assist the growth of plants by the release of nutrients.</rdfs:comment>
+        <rdfs:label>Fertilizer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33575 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33575">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_48356"/>
+        <rdfs:comment>A carbon oxoacid acid carrying at least one -C(=O)OH group and having the structure RC(=O)OH, where R is any any monovalent functional group. Carboxylic acids are the most common type of organic acid.</rdfs:comment>
+        <rdfs:label>Carboxylic Acids</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_37172 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37172">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#OrganicLinker"/>
+        <rdfs:comment>Saturated silicon hydrides, analogues of the alkanes; i.e. compounds of the general formula SinH2n+2.</rdfs:comment>
+        <rdfs:label>Silanes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_37527 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37527">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#Modulator"/>
+        <rdfs:comment>An acid is a molecular entity capable of donating a hydron (Bronsted acid) or capable of forming a covalent bond with an electron pair (Lewis acid).</rdfs:comment>
+        <rdfs:label>Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_37578 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37578">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#Modulator"/>
+        <rdfs:comment>Any heteroatomic molecular entity that is a chemical compound of halogen with other chemical elements.</rdfs:comment>
+        <rdfs:label>Halide</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_46787 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_46787">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/nfdi4cat/voc4cat_0000045"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/nfdi4cat/voc4cat_0007247"/>
+        <rdfs:comment>A liquid that can dissolve other substances (solutes) without any change in their chemical composition.</rdfs:comment>
+        <rdfs:label>Solvent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_48356 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_48356">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46787"/>
+        <rdfs:comment>A polar solvent that is capable of acting as a hydron (proton) donor.</rdfs:comment>
+        <rdfs:label>Protic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_48357 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_48357">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46787"/>
+        <rdfs:comment>Solvents that do not donate hydrogen bonds, such as DMF or DMSO, commonly used in MOF synthesis to dissolve reactants and facilitate coordination without participating in hydrogen bonding.</rdfs:comment>
+        <rdfs:isDefinedBy>https://www.wikidata.org/wiki/Q106575154</rdfs:isDefinedBy>
+        <rdfs:label>Aprotic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_51580 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_51580">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#OrganicLinker"/>
+        <rdfs:comment>Compounds containing a phthalocyanine skeleton.</rdfs:comment>
+        <rdfs:label>Phthalocyanines</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_60027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_60027">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#Modulator"/>
+        <rdfs:comment>A polymer is a mixture, which is composed of macromolecules of different kinds and which may be differentiated by composition, length, degree of branching etc..</rdfs:comment>
+        <rdfs:label>Polymer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_68452 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_68452">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#OrganicLinker"/>
+        <rdfs:comment>Any monocyclic heteroarene consisting of a five-membered ring containing nitrogen. Azoles can also contain one or more other non-carbon atoms, such as nitrogen, sulfur or oxygen.</rdfs:comment>
+        <rdfs:label>Azole</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000074 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000074">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#MicroscopyInstruments"/>
+        <rdfs:comment>Microscopy where a finely focused (&lt;10 nm diameter) electron beam produced by thermionic emission heating (field emission) and with an acceleration voltage 50-150 kV is scanned across the specimen under vacuum and the interaction of the electrons with the specimen is determined.</rdfs:comment>
+        <rdfs:label>FESEM</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000080 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000080">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#MicroscopyInstruments"/>
+        <rdfs:comment>Electron microscopy where the intensities of the electrons through an electron-transparent specimen are measured.</rdfs:comment>
+        <rdfs:label>TEM</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000084 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000084">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#MicroscopyInstruments"/>
+        <rdfs:comment>Transmission electron microscopy where the phase contrast between the transmitted interfering electron waves is used to produce an image.</rdfs:comment>
+        <rdfs:label>HRTEM</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000132 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000132">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#MicroscopyInstruments"/>
+        <rdfs:comment>Microscopy which uses a sharp conducting probe (or &apos;tip&apos;) held very close (1 nm) to the surface of the specimen. A bias voltage is applied between the tip and specimen which causes a tunnelling current to flow. An image is obtained by mechanically moving the probe in a raster scan of the specimen, line by line, and recording the tunnelling current as a function of position.</rdfs:comment>
+        <rdfs:label>STM</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000156 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000156">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#XRayInstruments"/>
+        <rdfs:comment>A method for determining structure by directing a beam of X-rays at the sample and detecting the positions and intensities of the diffracted X-rays as a pattern of spots on a photographic plate.</rdfs:comment>
+        <rdfs:label>XRD</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000158 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000158">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#XRayInstruments"/>
+        <rdfs:comment>A method for determining structure by directing a beam of X-rays at a powdered solid sample and detecting the positions and intensities of the diffracted X-rays as a pattern of spots on a photographic plate.</rdfs:comment>
+        <rdfs:label>PXRD</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000159 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000159">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#XRayInstruments"/>
+        <rdfs:comment>A method for determining structure by directing a beam of X-rays at a single crystal sample and detecting the positions and intensities of the diffracted X-rays as a pattern of spots on a photographic plate. Single crystal X-ray diffraction is used for protein crystallography.</rdfs:comment>
+        <rdfs:label>SCXRD</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000167 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000167">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#SpectrometryInstruments"/>
+        <rdfs:comment>A method for determining the size distribution of a sample of small particles in solution by illuminating the sample with a light source (usually a laser) and measuring the time-dependent fluctuations in the intensity of the scattered light caused by Brownian motion.</rdfs:comment>
+        <rdfs:label>DLS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000404 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000404">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#XRayInstruments"/>
+        <rdfs:comment>Spectroscopy where the sample is illuminated with X-rays causing ionisation and the emission of photoelectrons, the energies of which are measured.</rdfs:comment>
+        <rdfs:label>XPS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000538 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000538">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#ApplicationInstruments"/>
+        <rdfs:comment>Plasma mass spectrometry where the plasma has been generated by electromagnetic induction.</rdfs:comment>
+        <rdfs:label>ICP-MS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000681 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000681">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C62606"/>
+        <rdfs:comment>Any measurement technique in which a physical property of the sample is measured as a function of temperature.</rdfs:comment>
+        <rdfs:label>Thermal Analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000954 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000954">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#MicroscopyInstruments"/>
+        <rdfs:comment>A microscope which uses a sharp spike (known as a &apos;tip&apos;) mounted on the end of a cantilever to scan the surface of the specimen. An image of the surface is obtained by mechanically moving the probe in a raster scan of the specimen, line by line, and recording the force experienced by the tip as a function of position. A feedback loop is used to maintain a fixed relationship between the tip and surface during scanning.</rdfs:comment>
+        <rdfs:label>AFM</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0001301 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001301">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/nfdi4cat/voc4cat_0000045"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/nfdi4cat/voc4cat_0007244"/>
+        <rdfs:comment>A method used to synthesise a sample.</rdfs:comment>
+        <rdfs:label>Method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0001311 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001311">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#Gas"/>
+        <rdfs:comment>A thin film deposition technique based on the sequential reaction of gaseous precursors at a surface to produce a monolayer.</rdfs:comment>
+        <rdfs:label>ALD</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0001314 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001314">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#Gas"/>
+        <rdfs:comment>A synthesis method where the substrate is exposed to one or more volatile precursors, which react or decompose on the surface to produce a deposit.</rdfs:comment>
+        <rdfs:label>CVD</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0001377 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001377">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#Liquid"/>
+        <rdfs:comment>A synthesis method for growing single crystals from an aqueous solution in an autoclave (a thick-walled steel vessel) at high temperature (400 °C) and pressure.</rdfs:comment>
+        <rdfs:label>Hydrothermal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0001458 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001458">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#Liquid"/>
+        <rdfs:comment>A synthesis method for growing single crystals from a non-aqueous solution in an autoclave (a thick-walled steel vessel) at high temperature (400 °C) and pressure.</rdfs:comment>
+        <rdfs:label>Solvothermal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0001555 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001555">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#Hybrid"/>
+        <rdfs:comment>The removal of water from a liquid sample by pumping it through an atomiser (to produce a spray of fine droplets) then passing a hot gas (e.g. air or N2) through it.</rdfs:comment>
+        <rdfs:label>Spray Drying</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0001654 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001654">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#SolidStateInstruments"/>
+        <rdfs:comment>The mechanical reduction of the particle size of a solid sample by grinding with one or more inert balls (ceramic, flint, or stainless steel, 2–8 mm diameter) rotating around a horizontal axis.</rdfs:comment>
+        <rdfs:label>Ball Milling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0002166 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002166">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#LiquidPhaseInstruments"/>
+        <rdfs:comment>A thick-walled steel vessel used during synthesis methods that require both high pressures and high temperatures.</rdfs:comment>
+        <rdfs:label>Autoclave</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000305 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000305">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/nfdi4cat/voc4cat_0007013"/>
+        <rdfs:comment>A high temperature environment is an environment in which material entities are exposed to increased levels of heat radiation or which have molecules or atoms moving randomly with increased levels of average kinietic energy.</rdfs:comment>
+        <rdfs:label>High Temperature Environment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01001442 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001442">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33232"/>
+        <rdfs:comment>A land use process during which terrestrial environments are modified such that they can grow crop plants or allow the rearing of animals to provide food, fiber, medicines, or other products used by humans.</rdfs:comment>
+        <rdfs:label>Agriculture</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00004288 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00004288">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03530112"/>
+        <rdfs:comment>A food datum indicating that a food preservation process has been applied to one or more food items.</rdfs:comment>
+        <rdfs:label>Food Preservation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03490100 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03490100">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03530112"/>
+        <rdfs:comment>A food contact material which encloses the food and can be in the type of a container, packaging or wrapping.</rdfs:comment>
+        <rdfs:label>Food Packaging</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03530112 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03530112">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33232"/>
+        <rdfs:comment>The process of preparing food in an industrial facility.</rdfs:comment>
+        <rdfs:label>Food Industry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0016491 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0016491">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17771"/>
+        <rdfs:comment>Catalysis of an oxidation-reduction (redox) reaction, a reversible chemical reaction in which the oxidation state of an atom or atoms within a molecule is altered. One substrate acts as a hydrogen or electron donor and becomes oxidized, while the other acts as hydrogen or electron acceptor and becomes reduced.</rdfs:comment>
+        <rdfs:label>Redox Activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MI_0968 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_0968">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/i40/sto#Sensing"/>
+        <rdfs:comment>A biosensor is a device for the detection of an analyte that combines a biological component with a physicochemical detector component</rdfs:comment>
+        <rdfs:label>Biosensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MI_2055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_2055">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#ChemicalNature"/>
+        <rdfs:comment>Chemical stability occurs when a substance is in a (dynamic) chemical equilibrium with its environment. In this well-defined state, the substance is expected to persist indefinitely (assuming that the environment does not change). A substance which is not chemically stable (yet exists) is metastable or kinetically persistent.</rdfs:comment>
+        <rdfs:label>Chemical Stability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MOP_0000781 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOP_0000781">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33232"/>
+        <rdfs:comment>A molecular process resulting in the rate of another molecular process being increased without modifying the other process&apos;s overall Gibbs standard energy change.</rdfs:comment>
+        <rdfs:label>Catalysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C15300 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C15300">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#BiomedicalEngineering"/>
+        <rdfs:comment>Use of light activated drugs (photosensitizing agents) to treat cancer and other conditions.</rdfs:comment>
+        <rdfs:label>Photodynamic Therapy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C16269 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C16269">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000012"/>
+        <rdfs:comment>The process of change in the structure and function of an organism that occurs with the passage of time.</rdfs:comment>
+        <rdfs:label>Aging</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C1737 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C1737">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#Modulator"/>
+        <rdfs:comment>A group of organic liquid compounds that are used for extracting, dissolving, or suspending other water insoluble compounds.</rdfs:comment>
+        <rdfs:label>Organic Solvents</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C17423 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C17423">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33232"/>
+        <rdfs:comment>Modern technology, distributed with or as a part of a drug product that allows for the uniform release or targeting of drugs to the body.</rdfs:comment>
+        <rdfs:label>Drug Delivery</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C17771 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C17771">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#Properties"/>
+        <rdfs:comment>General term for compositional, structural, and reactivity- affecting qualities of chemical compounds.</rdfs:comment>
+        <rdfs:label>Chemical Propeties</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C1966 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C1966">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#BiomedicalEngineering"/>
+        <rdfs:comment>A compound that enables or improves the visualization of body structures or functions for medical imaging.</rdfs:comment>
+        <rdfs:label>Imaging Agents</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C205030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C205030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C62606"/>
+        <rdfs:comment>The measurement of the empty spaces/voids in a material.</rdfs:comment>
+        <rdfs:label>Porosity Analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C205041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C205041">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C62606"/>
+        <rdfs:comment>Total surface area of a 2D or 3D material.</rdfs:comment>
+        <rdfs:label>Surface Area Analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C25248 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C25248">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000012"/>
+        <rdfs:comment>Of relatively great or greater than average spatial extension or temporal duration.</rdfs:comment>
+        <rdfs:label>Long</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C25249 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C25249">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000012"/>
+        <rdfs:comment>Having little (physical) length or seeming to be limited in (temporal) duration.</rdfs:comment>
+        <rdfs:label>Short</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C25483 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C25483">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#StructuralProperties"/>
+        <rdfs:comment>The magnitude of something in a particular direction, especially length or width or height.</rdfs:comment>
+        <rdfs:label>Dimension</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C49839 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C49839">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#LiquidPhaseInstruments"/>
+        <rdfs:comment>A device designed to produce an electric current through chemical reaction.</rdfs:comment>
+        <rdfs:label>Battery</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C62606 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C62606">
+        <owl:disjointWith rdf:resource="https://w3id.org/nfdi4cat/voc4cat_0000045"/>
+        <rdfs:comment>The act of describing distinctive characteristics or essential features.</rdfs:comment>
+        <rdfs:label>Characterization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C63804 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C63804">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#BasicPolyhedralShapes"/>
+        <rdfs:comment>An object that is comprised of six regular, solid, congruent square faces and has three equal axes at right angles to each other.</rdfs:comment>
+        <rdfs:label>Cube</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C63856 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C63856">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#BasicPolyhedralShapes"/>
+        <rdfs:comment>The geometry of an object which is comprised of a polyhedron containing four faces.</rdfs:comment>
+        <rdfs:label>Tetrahedron</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C64352 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C64352">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#SpecialGeometries"/>
+        <rdfs:comment>An object resembling a slender bar.</rdfs:comment>
+        <rdfs:label>Rod Like</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C64353 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C64353">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#SpecialGeometries"/>
+        <rdfs:comment>A solid or hollow three-dimensional object bounded by a closed surface such that every point on the surface is equidistant from the center.</rdfs:comment>
+        <rdfs:label>Sphere Like</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C64657 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C64657">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/nfdi4cat/voc4cat_0007244"/>
+        <rdfs:comment>To reduce in strength or concentration, especially by the addition of water.</rdfs:comment>
+        <rdfs:label>Dilute</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C78875 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C78875">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C62606"/>
+        <rdfs:comment>A technique where a sample is heated and degassed to remove contaminants, followed by exposure to doses of an inert gas. The adsorption of the gas is measured and, subsequently, the gas is withdrawn while the desorption is measured. The profile of adsorption and desorption of the gas at various vacuum pressures can be used to determine the surface area of the sample.</rdfs:comment>
+        <rdfs:label>Gas Adsorption Analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C95904 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C95904">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002012"/>
+        <rdfs:comment>Clothing designed to protect the wearer from injury or exposure to hazardous conditions or substances.</rdfs:comment>
+        <rdfs:label>Protective Clothing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001061 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001061">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#Liquid"/>
+        <rdfs:comment>A device that is used to apply microwave irradiation to chemical reactions.</rdfs:comment>
+        <rdfs:label>Microwave System</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000051">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#StructuralProperties"/>
+        <rdfs:comment>A quality of a single physical entity inhering in the bearer by virtue of the bearer&apos;s size or shape or structure.</rdfs:comment>
+        <rdfs:label>Morphology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000117 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000117">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#StructuralProperties"/>
+        <rdfs:comment>A morphology quality inhering in a bearer by virtue of the bearer&apos;s physical magnitude.</rdfs:comment>
+        <rdfs:label>Size</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000700 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000700">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#SurfaceTexture"/>
+        <rdfs:comment>A texture quality inhering in a bearer by virtue of the bearer&apos;s irregular surface.</rdfs:comment>
+        <rdfs:label>Rough</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000701 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000701">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#SurfaceTexture"/>
+        <rdfs:comment>A texture quality inhering in a bearer by virtue of the bearer&apos;s processing a surface free of roughness or irregularities.</rdfs:comment>
+        <rdfs:label>Smooth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000973 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000973">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#StructuralProperties"/>
+        <rdfs:comment>A structure quality inhering in a bearer by virtue of the bearer&apos;s disposition to admit the passage of gas or liquid through pores or interstices.</rdfs:comment>
+        <rdfs:label>Porosity</rdfs:label>
+        <rdfs:seeAlso>https://wiki.anton-paar.com/in-en/pore-size-measurement/</rdfs:seeAlso>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q125017352</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001159 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001159">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/nfdi4cat/voc4cat_0007244"/>
+        <rdfs:comment>A concentration quality inhering in a bearer by virtue of the bearer&apos;s exhibiting concentration.</rdfs:comment>
+        <rdfs:label>Concentrated</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001757 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001757">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#ElectronicProperties"/>
+        <rdfs:comment>A conductivity quality inhering in a bearer by virtue of the bearer&apos;s ability to convey electricity.</rdfs:comment>
+        <rdfs:label>Electrical Conductivity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0002012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33232"/>
+        <rdfs:comment>A texture quality that exists through a liquid cover on the surface of the bearer.</rdfs:comment>
+        <rdfs:label>Textile and Coating</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0002045 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002045">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#AggregateStructures"/>
+        <rdfs:comment>A branched quality inhering in a bearer by virtue of the bearer&apos;s having smaller branches arising from larger branches. Resembling a tree in branching structure.</rdfs:comment>
+        <rdfs:label>Dendritic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0002065 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002065">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#SpecialGeometries"/>
+        <rdfs:comment>A shape quality inhering in a bearer by virtue of the bearer&apos;s being arranged like rays or radii; radiating from a common center.</rdfs:comment>
+        <rdfs:label>Star Shaped</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0002539 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002539">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#SpecialGeometries"/>
+        <rdfs:comment>A shape quality inhering in a bearer by virtue of the bearer&apos;s having a shape like a ring (a circular shape enclosing a space).</rdfs:comment>
+        <rdfs:label>Ring Like</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PROCO_0000012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000012">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/nfdi4cat/voc4cat_0000045"/>
+        <rdfs:comment>A temporal region that describes the length of time that a synthesis occurs.</rdfs:comment>
+        <rdfs:label>Reaction Time</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000036">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOP_0000781"/>
+        <rdfs:comment>Catalytic reaction involving light absorption by a catalyst or by a substrate.</rdfs:comment>
+        <rdfs:label>Photocatalysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000082 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000082">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOP_0000781"/>
+        <rdfs:comment>Catalysis in which only one phase is involved.</rdfs:comment>
+        <rdfs:label>Homogenous Catalysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TO_0000859 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TO_0000859">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#SpecialGeometries"/>
+        <rdfs:comment>A flower morphology trait (TO:0000499) which is the shape of a flower (PO:0009046).Refer to shape (PATO:0000052): A morphological quality inhering in a bearer by virtue of the bearer&apos;s ratios of distances between its features (points, edges, surfaces and also holes etc).</rdfs:comment>
+        <rdfs:label>Flower Like</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/iot/vocab/m3-lite#GasDetector -->
+
+    <owl:Class rdf:about="http://purl.org/iot/vocab/m3-lite#GasDetector">
+        <rdfs:subClassOf rdf:resource="http://champ-project.org/images/ontology/cao.owl#CAO_000094"/>
+        <rdfs:comment>Device that detects the presence of gases in an area, often as part of a safety system.</rdfs:comment>
+        <rdfs:label>Gas Detector</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/iot/vocab/m3-lite#HumiditySensor -->
+
+    <owl:Class rdf:about="http://purl.org/iot/vocab/m3-lite#HumiditySensor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/iot/vocab/m3-lite#GasDetector"/>
+        <rdfs:comment>Humidity sensor or hygrometer is an instrument used for measuring the moisture content in the environment.</rdfs:comment>
+        <rdfs:label>Humidity Sensors</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_001407 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001407">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#StructuralProperties"/>
+        <rdfs:comment>The surface area of a is a measure of the total area that the surface of the object occupies.</rdfs:comment>
+        <rdfs:label>Surface Area</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocabs.lter-europe.net/EnvThes/10323 -->
+
+    <owl:Class rdf:about="http://vocabs.lter-europe.net/EnvThes/10323">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/nfdi4cat/voc4cat_0007244"/>
+        <rdfs:comment>Impregnation of one substance by another to the greatest possible extent; that concentration of a dissolved substance that cannot be exceeded.</rdfs:comment>
+        <rdfs:label>Saturated</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocabs.lter-europe.net/EnvThes/21159 -->
+
+    <owl:Class rdf:about="http://vocabs.lter-europe.net/EnvThes/21159">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33232"/>
+        <rdfs:comment>Amount of energy reserves; often refers to the stocks of non-renewable fuel, such as oil, which a nation, for example, possesses.</rdfs:comment>
+        <rdfs:label>Energy Storage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocabs.lter-europe.net/EnvThes/22200 -->
+
+    <owl:Class rdf:about="http://vocabs.lter-europe.net/EnvThes/22200">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000973"/>
+        <rdfs:comment>A quantitative or qualitative measurement of the physical dimensions of the pores in a material.</rdfs:comment>
+        <rdfs:label>Pore Size</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eionet.europa.eu/gemet/concept/66 -->
+
+    <owl:Class rdf:about="http://www.eionet.europa.eu/gemet/concept/66">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25213"/>
+        <rdfs:comment>A group of 15 radioactive elements some of which occur naturally while others are produced in nuclear reactions. They include plutonium, americium and neptunium. The health hazard presented by the actinides, if they are released into the environment, comes from the potency of their radioactive characteristics. They are alpha-emitters, and therefore can cause intense localized damage in tissues if absorbed into the body.</rdfs:comment>
+        <rdfs:label>Actinide Metals</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#AggregateStructures -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#AggregateStructures">
+        <rdfs:subClassOf rdf:resource="http://purl.allotrope.org/ontologies/quality#AFQ_0000311"/>
+        <rdfs:comment>Refers to the overall form resulting from the clustering or assembly of MOF particles into larger, often irregularly shaped agglomerates.</rdfs:comment>
+        <rdfs:label>Aggregate Structures</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#Aggregated -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#Aggregated">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#SurfaceTexture"/>
+        <rdfs:comment>Refers to the overall surface characteristics of a collection of particles or clusters, including roughness, smoothness, and the presence of any patterns or irregularities formed by the aggregation.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#AirPurification -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#AirPurification">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#EnvironmentalRemediation"/>
+        <rdfs:comment>Removing harmful gases, volatile organic compounds, or particulate matter from the air using selective adsorption and catalytic degradation processes.</rdfs:comment>
+        <rdfs:isDefinedBy>https://www.wikidata.org/wiki/Q5334286</rdfs:isDefinedBy>
+        <rdfs:label>Air Purification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#AlkenylLinkers -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#AlkenylLinkers">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#OrganicLinker"/>
+        <rdfs:comment>Alkenyl linkers are organic molecules containing an alkene (carbon-carbon double bond) group that serve as connecting units in MOFs, providing structural rigidity and potential for additional functionalization.</rdfs:comment>
+        <rdfs:label>Alkenyl Linkers</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#AlkylLinkers -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#AlkylLinkers">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#OrganicLinker"/>
+        <rdfs:comment>Alkyl linkers are organic molecules containing saturated carbon chains (e.g., -CH2-, -C4H8-) that connect metal cations in MOFs, contributing to the framework&apos;s stability and hydrophobicity.</rdfs:comment>
+        <rdfs:label>Alkyl Linkers</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#AmineBasedLinkers -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#AmineBasedLinkers">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#OrganicLinker"/>
+        <rdfs:comment>Amine-based linkers are organic molecules containing amine groups (-NH2) that coordinate with metal cations in MOFs, enhancing the framework&apos;s stability and providing sites for further functionalization or catalytic activity.</rdfs:comment>
+        <rdfs:label>Amine based Linkers</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#AmmoniaSensors -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#AmmoniaSensors">
+        <rdfs:subClassOf rdf:resource="http://purl.org/iot/vocab/m3-lite#GasDetector"/>
+        <rdfs:comment>A gas detector that selectively identifies and quantifies ammonia levels by converting its interaction into a measurable electrical or optical signal.</rdfs:comment>
+        <rdfs:label>Ammonia Sensors</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#AmmoniumBasedLinkers -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#AmmoniumBasedLinkers">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#OrganicLinker"/>
+        <rdfs:comment>Ammonium-based linkers are organic molecules containing ammonium groups (-NH4+) that interact with metal cations in MOFs, often enhancing the framework&apos;s ionic conductivity and stability in aqueous environments.</rdfs:comment>
+        <rdfs:label>Ammonium based Linkers</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#AntiBacterialCoatings -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#AntiBacterialCoatings">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002012"/>
+        <rdfs:comment>A liquid-applied finish on textiles that imparts antibacterial properties to the surface, enhancing hygiene by inhibiting microbial growth while maintaining fabric texture and quality.</rdfs:comment>
+        <rdfs:label>Anti Bacterial Coatings</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#Antiferromagnetism -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#Antiferromagnetism">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#MagneticProperties"/>
+        <rdfs:comment>Antiferromagnetism in MOFs refers to a magnetic ordering where adjacent magnetic moments align in opposite directions, resulting in no net macroscopic magnetization.</rdfs:comment>
+        <rdfs:isDefinedBy>https://www.wikidata.org/wiki/Q575224</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#ApplicationInstruments -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#ApplicationInstruments">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#Instruments"/>
+        <owl:disjointWith rdf:resource="http://www.mofontology.amrita.edu/terms#CharacterizationInstruments"/>
+        <rdfs:comment>Tool used to implement a material&apos;s performance in specific practical applications.</rdfs:comment>
+        <rdfs:label>Application Instruments</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#AromaicCarboxylates -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#AromaicCarboxylates">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#Carboxylates"/>
+        <rdfs:comment>Aromatic carboxylates are organic ligands that contain a carboxyl group (-COO⁻) attached to an aromatic ring, commonly used in MOF synthesis to provide strong coordination to metal cations and enhance the stability and rigidity of the framework.</rdfs:comment>
+        <rdfs:label>Aromatic Carboxylates</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#AsymmetricCatalysis -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#AsymmetricCatalysis">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOP_0000781"/>
+        <rdfs:comment>Accelerating reactions that produce mostly one mirror-image form of a molecule.</rdfs:comment>
+        <rdfs:isDefinedBy>https://www.wikidata.org/wiki/Q96705587</rdfs:isDefinedBy>
+        <rdfs:label>Asymmetric Catalysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#BasicPolyhedralShapes -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#BasicPolyhedralShapes">
+        <rdfs:subClassOf rdf:resource="http://purl.allotrope.org/ontologies/quality#AFQ_0000311"/>
+        <rdfs:comment>Refer to simple geometric shapes with flat faces and straight edges, including structures such as tetrahedra, cubes, octahedra, and dodecahedra.</rdfs:comment>
+        <rdfs:label>Basic Polyhedral Shapes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#Biocatalysis -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#Biocatalysis">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOP_0000781"/>
+        <rdfs:comment>Use of natural catalysts to carry out accelerated chemical transformations</rdfs:comment>
+        <rdfs:isDefinedBy>https://www.wikidata.org/wiki/Q16007026</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#BiphenyleneLinkers -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#BiphenyleneLinkers">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#OrganicLinker"/>
+        <rdfs:comment>Biphenylene linkers are organic molecules consisting of two connected benzene rings, often used in MOF synthesis to provide structural rigidity and aromaticity, contributing to the stability and electronic properties of the framework.</rdfs:comment>
+        <rdfs:label>Biphenylene Linkers</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#CarbonDioxideSensors -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#CarbonDioxideSensors">
+        <rdfs:subClassOf rdf:resource="http://purl.org/iot/vocab/m3-lite#GasDetector"/>
+        <rdfs:comment>Instrument for the measurement of carbon dioxide gas.</rdfs:comment>
+        <rdfs:isDefinedBy>https://www.wikidata.org/wiki/Q5037960</rdfs:isDefinedBy>
+        <rdfs:label>Carbon Dioxide Sensors</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#CarbonateBasedSolvents -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#CarbonateBasedSolvents">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_48357"/>
+        <rdfs:comment>Solvents containing carbonate groups (e.g., dimethyl carbonate, propylene carbonate), used in MOF synthesis for their high polarity, chemical stability, and ability to dissolve a wide range of precursors.</rdfs:comment>
+        <rdfs:label>Carbonate based Solvents</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#Carboxylates -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#Carboxylates">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#OrganicLinker"/>
+        <rdfs:comment>Carboxylates are organic compounds containing carboxyl groups (-COO⁻), which act as ligands in MOF synthesis by coordinating with metal cations, contributing to the framework&apos;s stability and functionality.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#CharacterizationInstruments -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#CharacterizationInstruments">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#Instruments"/>
+        <owl:disjointWith rdf:resource="http://www.mofontology.amrita.edu/terms#SynthesisInstruments"/>
+        <rdfs:comment>tools used to analyze the physical, chemical, and structural properties of materials to understand their composition and behavior.</rdfs:comment>
+        <rdfs:label>Characterization Instruments</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#ChemicalNature -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#ChemicalNature">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17771"/>
+        <rdfs:comment>Inherent chemical characteristics of a substance, including its composition, bonding, reactivity, and stability.</rdfs:comment>
+        <rdfs:label>Chemical Nature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#ChemicalReactivity -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#ChemicalReactivity">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#ChemicalNature"/>
+        <rdfs:comment>The ability to undergo or catalyze chemical transformations through active sites within the framework or on its surface.</rdfs:comment>
+        <rdfs:label>Chemical Reactivity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#ChlorideBasedIonicLiquids -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#ChlorideBasedIonicLiquids">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#Ionic"/>
+        <rdfs:comment>Chloride-based ionic liquids are ionic liquids in which chloride ions (Cl⁻) are the counterions, commonly used in MOF synthesis for their ability to dissolve metal salts and organic linkers, as well as to stabilize reactive intermediates during framework formation.</rdfs:comment>
+        <rdfs:label>Chloride based Ionic Liquids</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#ChlorinatedSolvents -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#ChlorinatedSolvents">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_48357"/>
+        <rdfs:comment>Solvents containing chlorine atoms (e.g., chloroform, dichloromethane), used in MOF synthesis for their ability to dissolve nonpolar compounds and influence crystal growth and morphology.</rdfs:comment>
+        <rdfs:label>Chlorinated Solvents</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#CholineBasedIonicLiquids -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#CholineBasedIonicLiquids">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#Ionic"/>
+        <rdfs:comment>Choline-based ionic liquids are a type of ionic liquid where choline cations (a quaternary ammonium compound) pair with various anions, often used in MOF synthesis for their high solvation ability, low toxicity, and tunable properties to enhance metal-organic framework formation.</rdfs:comment>
+        <rdfs:label>Choline based Ionic Liquids</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#CompositeMaterials -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#CompositeMaterials">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#MechanicalApplications"/>
+        <rdfs:comment>Improving mechanical, thermal, or functional properties by integrating porous, high-surface-area materials into polymer or metal matrices.</rdfs:comment>
+        <rdfs:label>Composite Materials</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#Controlled -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#Controlled">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/nfdi4cat/voc4cat_0007013"/>
+        <rdfs:comment>Refers to the precise regulation of temperature during MOF synthesis to influence the formation, crystallization, and properties of the framework, ensuring optimal conditions for desired characteristics.</rdfs:comment>
+        <rdfs:label>Controlled Temperature Environment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#CoordinationModulators -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#CoordinationModulators">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#Modulator"/>
+        <rdfs:comment>Molecule that binds to metal cations during MOF synthesis, influencing the coordination environment and affecting the size, shape, and properties of the resulting framework.</rdfs:comment>
+        <rdfs:label>Coordination Modulators</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#CopperIonSensors -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#CopperIonSensors">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#LiquidSensors"/>
+        <rdfs:comment>A liquid sensor that selectively detects copper ions by converting their chemical interaction into a measurable signal, enabling precise monitoring in aqueous environments.</rdfs:comment>
+        <rdfs:label>Copper Ion Sensors</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#CoralLike -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#CoralLike">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#AggregateStructures"/>
+        <rdfs:comment>Refers to a porous, branched morphology resembling natural coral, characterized by interconnected networks and high surface area.</rdfs:comment>
+        <rdfs:label>Coral Like</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#CrystalSize -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#CrystalSize">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000117"/>
+        <rdfs:comment>Refers to the dimensions of individual crystalline domains within a material, which can influence its physical, chemical, and mechanical behavior.</rdfs:comment>
+        <rdfs:label>Crystal Size</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#CylindricalPrism -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#CylindricalPrism">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#PrismaticShapes"/>
+        <rdfs:comment>Refers to a three-dimensional structure with a circular cross-section that extends along a specific axis, resembling a cylinder with uniform length and diameter.</rdfs:comment>
+        <rdfs:label>Cylindrical Prism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#DRS -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#DRS">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#SpectrometryInstruments"/>
+        <rdfs:comment>Used to analyze the optical properties and electronic transitions of solid, powder, or opaque samples by measuring reflected light.</rdfs:comment>
+        <rdfs:label>DRS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#Dicarboxylates -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#Dicarboxylates">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#Carboxylates"/>
+        <rdfs:comment>Dicarboxylates are organic ligands that contain two carboxyl groups (-COO⁻), often used in MOF synthesis to form strong coordination bonds with metal cations, resulting in highly stable and versatile frameworks.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#DielectricProperties -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#DielectricProperties">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#ElectronicProperties"/>
+        <rdfs:comment>Dielectric properties of MOFs describe their ability to store and polarize electric charge in response to an external electric field.</rdfs:comment>
+        <rdfs:label>Dielectric Properties</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#Dodecahedron -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#Dodecahedron">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#BasicPolyhedralShapes"/>
+        <rdfs:comment>Polyhedron with 12 faces.</rdfs:comment>
+        <rdfs:isDefinedBy>https://www.wikidata.org/wiki/Q178296</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#ElectochemicalWorkstation -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#ElectochemicalWorkstation">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#ApplicationInstruments"/>
+        <rdfs:comment>Sophisticated instruments designed to measure and control electrical signals in electrochemical experiments.</rdfs:comment>
+        <rdfs:label>Electrochemical Workstation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#Electrocatalysis -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#Electrocatalysis">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOP_0000781"/>
+        <rdfs:comment>Enhances the rate of an electrochemical reaction by lowering the energy barrier at the electrode surface.</rdfs:comment>
+        <rdfs:isDefinedBy>https://www.wikidata.org/wiki/Q100318565</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#Electrochemical -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#Electrochemical">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#Liquid"/>
+        <rdfs:comment>Method where MOFs are formed at the electrode surface through redox reactions involving metal ions and organic linkers in an electrochemical cell.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#ElectrochemicalProperties -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#ElectrochemicalProperties">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#Properties"/>
+        <rdfs:comment>The capability to conduct or store charge through redox-active sites, making it useful in energy storage and sensing applications.</rdfs:comment>
+        <rdfs:label>Electrochemical Properties</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#ElectronicCharacterization -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#ElectronicCharacterization">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C62606"/>
+        <rdfs:comment>Measuring a material’s electrical or electronic properties—such as conductivity, band gap, or charge mobility—to understand its behavior in electronic or energy-related applications.</rdfs:comment>
+        <rdfs:label>Electronic Characterization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#ElectronicProperties -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#ElectronicProperties">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#Properties"/>
+        <rdfs:comment>Refer to their behavior and characteristics related to charge transport, conductivity, and electronic band structure.</rdfs:comment>
+        <rdfs:label>Electronic Properties</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#Electrospray -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#Electrospray">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#Hybrid"/>
+        <rdfs:comment>Technique where charged droplets of precursor solution are generated and directed onto a substrate or into a reactor to form MOFs under controlled electric fields.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#ElementalAndCompositionalAnalysis -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#ElementalAndCompositionalAnalysis">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C62606"/>
+        <rdfs:comment>A process where a sample is analyzed for its elemental and sometimes isotopic composition (the elements present and sometimes their weight percentage).</rdfs:comment>
+        <rdfs:label>Elemental and Compositional Analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#EnvironmentalRemediation -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#EnvironmentalRemediation">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33232"/>
+        <rdfs:comment>Capturing, degrading, or removing pollutants from air, water, or soil through advanced adsorption, catalysis, or ion exchange techniques.</rdfs:comment>
+        <rdfs:isDefinedBy>https://www.wikidata.org/wiki/Q2019586</rdfs:isDefinedBy>
+        <rdfs:label>Environmental Remediation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#EtherBasedSolvents -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#EtherBasedSolvents">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_48357"/>
+        <rdfs:comment>Ether-based solvents are organic solvents containing an ether group (-C-O-C-), such as diethyl ether or THF, used in MOF synthesis for their moderate polarity and ability to solubilize both organic linkers and metal precursors.</rdfs:comment>
+        <rdfs:label>Ether based Solvents</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#FerricIonSensors -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#FerricIonSensors">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#LiquidSensors"/>
+        <rdfs:comment>A liquid sensor that detects and quantifies ferric (Fe³⁺) ions through selective chemical interaction, producing a measurable signal for analysis.</rdfs:comment>
+        <rdfs:label>Ferric Ion Sensors</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#Ferrimagnetism -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#Ferrimagnetism">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#MagneticProperties"/>
+        <rdfs:comment>Ferrimagnetism in MOFs refers to a magnetic ordering where opposing magnetic moments are unequal, leading to a net magnetization despite antiparallel alignment.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#Ferromagnetism -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#Ferromagnetism">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#MagneticProperties"/>
+        <rdfs:comment>Physical phenomenon whereby certain substances can become permanent magnets when subjected to a magnetic field</rdfs:comment>
+        <rdfs:isDefinedBy>https://www.wikidata.org/wiki/Q184207</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#FlatGeometries -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#FlatGeometries">
+        <rdfs:subClassOf rdf:resource="http://purl.allotrope.org/ontologies/quality#AFQ_0000311"/>
+        <rdfs:isDefinedBy>Refer to structures characterized by thin, planar shapes with minimal thickness, often seen in 2D or near-2D arrangements of particles or crystals in materials like MOFs.</rdfs:isDefinedBy>
+        <rdfs:label>Flat Geometries</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#Gas -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#Gas">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001301"/>
+        <rdfs:comment>Reactions involving gaseous precursors without the use of solvents.</rdfs:comment>
+        <rdfs:label>Gas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#GasStorageAndSeperation -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#GasStorageAndSeperation">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33232"/>
+        <rdfs:comment>Capturing, storing, and selectively separating gases based on size, shape, or chemical affinity using highly porous and tunable materials.</rdfs:comment>
+        <rdfs:label>Gas Storage and Seperation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#GeneDelivery -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#GeneDelivery">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#BiomedicalEngineering"/>
+        <rdfs:comment>Refers to the use of MOFs as carriers to transport genetic material into cells for therapeutic or research purposes, often enabling controlled and targeted release.</rdfs:comment>
+        <rdfs:label>Gene Delivery</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#HexagonalPrism -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#HexagonalPrism">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#PrismaticShapes"/>
+        <rdfs:comment>Prism with hexagonal base.</rdfs:comment>
+        <rdfs:label>Hexagonal Prism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#Honeycomb -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#Honeycomb">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#SpecialGeometries"/>
+        <rdfs:comment>Refers to a structure characterized by a regular, hexagonal pattern of interconnected cells, resembling a natural honeycomb, often providing high surface area and efficient packing.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#Hybrid -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#Hybrid">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001301"/>
+        <rdfs:comment>Combines multiple synthesis techniques, such as solvothermal and mechanochemical, to optimize MOF formation under tailored conditions.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#HybridPorous -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#HybridPorous">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#PorousNature"/>
+        <rdfs:comment>Refers to a material that combines multiple pore size types—microporous, mesoporous, and/or macroporous—within a single framework, enabling multifunctional adsorption and transport properties.</rdfs:comment>
+        <rdfs:label>Hybrid Porous</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#HydrogenBondDonors -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#HydrogenBondDonors">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_48356"/>
+        <rdfs:comment>A hydrogen bond donor is a molecule or functional group that provides a hydrogen atom attached to a highly electronegative atom (such as oxygen, nitrogen, or fluorine) to form hydrogen bonds with acceptor molecules, playing a key role in stabilizing structures like MOFs.</rdfs:comment>
+        <rdfs:label>Hydrogen bond Donors</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#HydrogenStorage -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#HydrogenStorage">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#GasStorageAndSeperation"/>
+        <rdfs:comment>Any method for storing hydrogen for later use.</rdfs:comment>
+        <rdfs:isDefinedBy>https://www.wikidata.org/wiki/Q1203442</rdfs:isDefinedBy>
+        <rdfs:label>Hydrogen Storage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#HydrogenSulfideSensors -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#HydrogenSulfideSensors">
+        <rdfs:subClassOf rdf:resource="http://purl.org/iot/vocab/m3-lite#GasDetector"/>
+        <rdfs:comment>A gas detector that selectively measures hydrogen sulfide concentrations by converting its chemical interaction into a detectable signal.</rdfs:comment>
+        <rdfs:isDefinedBy>https://www.wikidata.org/wiki/Q17028301</rdfs:isDefinedBy>
+        <rdfs:label>Hydrogen Sulfide Sensors</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#Hydroxycarboxylates -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#Hydroxycarboxylates">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#Carboxylates"/>
+        <rdfs:comment>Hydroxycarboxylates are organic ligands that contain both a carboxyl group (-COO⁻) and a hydroxyl group (-OH), which can coordinate with metal cations in MOF synthesis, providing additional functional groups for enhanced stability and reactivity.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#Icosahedron -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#Icosahedron">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#BasicPolyhedralShapes"/>
+        <rdfs:comment>Polyhedron with 20 faces.</rdfs:comment>
+        <rdfs:isDefinedBy>https://www.wikidata.org/wiki/Q188758</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#ImidazoliumBasedIonicLiquids -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#ImidazoliumBasedIonicLiquids">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#Ionic"/>
+        <rdfs:comment>Imidazolium-based ionic liquids are ionic liquids that feature imidazolium cations, commonly used in MOF synthesis for their high thermal stability, ability to dissolve metal salts and organic linkers, and the potential to tailor their properties for specific framework structures.</rdfs:comment>
+        <rdfs:label>Imidazolium based Ionic Liquids</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#Instruments -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#Instruments">
+        <rdfs:comment>Instruments are tools or devices used to measure, analyze, or observe physical, chemical, or structural properties of materials in scientific studies.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#Ionic -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#Ionic">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46787"/>
+        <rdfs:comment>Refers to solvents composed of ionic liquids or molten salts that facilitate the dissolution of metal salts and organic linkers, offering enhanced stability and reactivity in MOF synthesis.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#IonicSpecies -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#IonicSpecies">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25213"/>
+        <rdfs:comment>Ionic species refer to charged particles, either positively (cations) or negatively (anions), that participate in the formation or stabilization of metal-organic frameworks (MOFs) through electrostatic interactions.</rdfs:comment>
+        <rdfs:label>Ionic Species</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#Lamellar -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#Lamellar">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#FlatGeometries"/>
+        <rdfs:comment>Refer to layered structures where the material is organized in flat, parallel layers, often exhibiting high surface area and distinct planes of interaction between layers.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#Langmuir -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#Langmuir">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001407"/>
+        <rdfs:comment>Unit of exposure of an adsorbate/gas to a substrate used in surface science to study adsorption.</rdfs:comment>
+        <rdfs:isDefinedBy>https://www.wikidata.org/wiki/Q464196</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#LangmuirAnalysis -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#LangmuirAnalysis">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C78875"/>
+        <rdfs:comment>Estimates the surface area of a material by assuming monolayer gas adsorption on a uniform surface.</rdfs:comment>
+        <rdfs:label>Langmuir Analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#LanthanideMetals -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#LanthanideMetals">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25213"/>
+        <rdfs:comment>A group of 15 chemical elements with similar properties, often used as metal centers in MOFs due to their unique electronic and magnetic characteristics.</rdfs:comment>
+        <rdfs:label>Lanthanide Metals</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#LeadIonSensors -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#LeadIonSensors">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#LiquidSensors"/>
+        <rdfs:comment>A liquid sensor that selectively identifies and measures lead (Pb²⁺) ions by translating their chemical interaction into a detectable signal.</rdfs:comment>
+        <rdfs:label>Lead Ion Sensors</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#Liquid -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#Liquid">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001301"/>
+        <rdfs:comment>Refers to the process of synthesizing materials by reacting precursors in a liquid medium, enabling controlled crystal growth and morphology through solution-based techniques.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#LiquidPhaseInstruments -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#LiquidPhaseInstruments">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#SynthesisInstruments"/>
+        <owl:disjointWith rdf:resource="http://www.mofontology.amrita.edu/terms#SolidStateInstruments"/>
+        <rdfs:comment>A synthesis instrument used to conduct and control chemical reactions in the liquid phase, enabling precise manipulation of solvents, reagents, and reaction parameters.</rdfs:comment>
+        <rdfs:label>LIquid Phase Instruments</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#LiquidSensors -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#LiquidSensors">
+        <rdfs:subClassOf rdf:resource="http://champ-project.org/images/ontology/cao.owl#CAO_000094"/>
+        <rdfs:comment>A device that detects the presence, level, or composition of liquids by translating physical or chemical interactions into measurable signals.</rdfs:comment>
+        <rdfs:label>Liquid Sensors</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#Luminescence -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#Luminescence">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#OpticalProperties"/>
+        <rdfs:comment>Spontaneous emission of radiation from an electronically or vibrationally excited species not in thermal equilibrium with its environment.</rdfs:comment>
+        <rdfs:label>Luminescence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#MOF -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#MOF">
+        <rdfs:comment>MOF (Metal Organic Framework): A crystalline material composed of metal ions or clusters coordinated to organic ligands, forming porous structures with high surface area and tunable properties.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.wikidata.org/wiki/Q909212</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#Macroporous -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#Macroporous">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#PorousNature"/>
+        <rdfs:comment>Refers to a material with pore sizes greater than 50 nanometers, facilitating bulk transport of larger molecules or particles.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#MagneticApplications -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#MagneticApplications">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33232"/>
+        <rdfs:comment>Enabling magnetic sensing, data storage, or spintronic functions through materials engineered with magnetic ions and ordered frameworks.</rdfs:comment>
+        <rdfs:label>Magnetic Applications</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#MagneticCharacterization -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#MagneticCharacterization">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C62606"/>
+        <rdfs:comment>Evaluating a material’s magnetic properties—such as magnetization, coercivity, or magnetic susceptibility—to understand its magnetic behavior and potential applications.</rdfs:comment>
+        <rdfs:label>Magnetic Characterization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#MagneticProperties -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#MagneticProperties">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#Properties"/>
+        <rdfs:comment>Magnetic properties of MOFs pertain to their response to magnetic fields, including behaviors like paramagnetism, ferromagnetism, or antiferromagnetism, arising from unpaired electron spins in metal centers or ligands.</rdfs:comment>
+        <rdfs:label>Magnetic Properties</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#Magnetoresistance -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#Magnetoresistance">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#ElectronicProperties"/>
+        <rdfs:comment>Tendency of a material to change the value of its electrical resistance in an externally-applied magnetic field</rdfs:comment>
+        <rdfs:isDefinedBy>https://www.wikidata.org/wiki/Q58347?wprov=srpw1_0</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#MainGroupMetals -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#MainGroupMetals">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25213"/>
+        <rdfs:comment>Elements found in the s- and p-blocks of the periodic table, commonly used as metal centers in MOFs for their versatile bonding capabilities and chemical stability.</rdfs:comment>
+        <rdfs:label>Main Group Metals</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#MechanicalApplications -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#MechanicalApplications">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33232"/>
+        <rdfs:comment>Enhancing strength, flexibility, or shock absorption in composites through materials with tunable porosity and structural rigidity.</rdfs:comment>
+        <rdfs:label>Mechanical Applications</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#MechanicalProperties -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#MechanicalProperties">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#Properties"/>
+        <rdfs:comment>Physical and mechanical properties of materials</rdfs:comment>
+        <rdfs:isDefinedBy>https://www.wikidata.org/wiki/Q5725005</rdfs:isDefinedBy>
+        <rdfs:label>Mechanical Properties</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#MechanicalPropertyEvaluation -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#MechanicalPropertyEvaluation">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C62606"/>
+        <rdfs:comment>Assessing a material’s strength, hardness, elasticity, or deformation behavior to understand its performance under physical stress or load.</rdfs:comment>
+        <rdfs:label>Mechanical Property Evaluation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#Mechanochemical -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#Mechanochemical">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#Solid"/>
+        <rdfs:comment>Solid-state method where MOFs are produced by applying mechanical force, such as grinding or milling, to induce chemical reactions between solid precursors.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#MercuryIonSensors -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#MercuryIonSensors">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#LiquidSensors"/>
+        <rdfs:comment>A liquid sensor that detects mercury (Hg²⁺) ions with high selectivity and sensitivity by converting their interaction into a measurable signal.</rdfs:comment>
+        <rdfs:label>Mercury Ion Sensors</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#Mesoporous -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#Mesoporous">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#PorousNature"/>
+        <rdfs:comment>Refers to a material with pore sizes between 2 and 50 nanometers, allowing for the diffusion and adsorption of medium-sized molecules.</rdfs:comment>
+        <rdfs:isDefinedBy>https://www.wikidata.org/wiki/Q380049</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#MethaneStorage -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#MethaneStorage">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#GasStorageAndSeperation"/>
+        <rdfs:comment>Densely capturing and storing methane under moderate conditions using materials with high surface area and tailored pore structures.</rdfs:comment>
+        <rdfs:label>Methane Storage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#Microporous -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#Microporous">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#PorousNature"/>
+        <rdfs:comment>Refers to a material with pore sizes less than 2 nanometers, suitable for selective adsorption of small molecules.</rdfs:comment>
+        <rdfs:isDefinedBy>https://www.wikidata.org/wiki/Q2752988</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#MicroscopyInstruments -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#MicroscopyInstruments">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#CharacterizationInstruments"/>
+        <rdfs:comment>Devices used to magnify and visualize structures at the micro- to nanoscale for detailed analysis of material morphology and features.</rdfs:comment>
+        <rdfs:label>Microscopic Instruments</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#MixedMetalComplexes -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#MixedMetalComplexes">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25213"/>
+        <rdfs:comment>Compounds consisting of two or more different metal ions coordinated with ligands,often used in MOF synthesis to enhance structural diversity and properties.</rdfs:comment>
+        <rdfs:label>Mixed Metal Complexes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#Moderate -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#Moderate">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/nfdi4cat/voc4cat_0007013"/>
+        <rdfs:comment>Refers to synthesis conditions typically ranging from 80°C to 200°C, which facilitate MOF formation without extreme thermal input, balancing reaction kinetics and structural integrity.</rdfs:comment>
+        <rdfs:label>Moderate Temperature Environment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#Modulator -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#Modulator">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/nfdi4cat/voc4cat_0007247"/>
+        <rdfs:comment>Substance added to the reaction mixture in MOF synthesis to influence the growth, structure, or morphology of the framework by interacting with metal cations or ligands.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#MorphologicalCharacteirization -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#MorphologicalCharacteirization">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C62606"/>
+        <rdfs:comment>Identifying and classifying shape, size, surface texture of materials or particle.</rdfs:comment>
+        <rdfs:label>Morphological Characterization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#NeutralOrganicMolecules -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#NeutralOrganicMolecules">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#Modulator"/>
+        <rdfs:comment>Compounds that do not carry a net charge, often serving as linkers or modulators in MOF synthesis to connect metal cations and influence the structure and properties of the framework.</rdfs:comment>
+        <rdfs:label>Neutral Organic Molecules</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#NitrogenOxideSensors -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#NitrogenOxideSensors">
+        <rdfs:subClassOf rdf:resource="http://purl.org/iot/vocab/m3-lite#GasDetector"/>
+        <rdfs:comment>A gas detector that measures nitrogen oxide levels by converting their chemical interaction into a measurable electrical or optical signal.</rdfs:comment>
+        <rdfs:isDefinedBy>https://www.wikidata.org/wiki/Q2937666</rdfs:isDefinedBy>
+        <rdfs:label>Nitrogen Oxide Sensors</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#NitrogenSeperation -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#NitrogenSeperation">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#GasStorageAndSeperation"/>
+        <rdfs:comment>Selectively isolating nitrogen from gas mixtures through controlled pore sizes and adsorption affinities tailored to molecular characteristics.</rdfs:comment>
+        <rdfs:label>Nitrogen Seperation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#NonPolarSolvents -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#NonPolarSolvents">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_48357"/>
+        <rdfs:comment>Non-polar solvents are solvents with low dielectric constants and minimal polarity (e.g., hexane, toluene), used in MOF synthesis to influence solubility, reaction kinetics, and crystal morphology, especially for hydrophobic components.</rdfs:comment>
+        <rdfs:label>Non Polar Solvents</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#Octahedron -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#Octahedron">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#BasicPolyhedralShapes"/>
+        <rdfs:comment>Polyhedron with 8 faces.</rdfs:comment>
+        <rdfs:isDefinedBy>https://www.wikidata.org/wiki/Q188884</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#OilSpillCleanup -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#OilSpillCleanup">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#EnvironmentalRemediation"/>
+        <rdfs:comment>Absorbing and separating oil from water using highly porous and hydrophobic materials designed for efficient recovery.</rdfs:comment>
+        <rdfs:isDefinedBy>https://www.wikidata.org/wiki/Q10609179</rdfs:isDefinedBy>
+        <rdfs:label>Oil Spill Cleanup</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#OpticCharacterization -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#OpticCharacterization">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C62606"/>
+        <rdfs:comment>Measuring a material’s interaction with light—such as absorbance, transmittance, reflectance, or photoluminescence—to determine its optical properties and behavior.</rdfs:comment>
+        <rdfs:label>Optic Characterization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#OpticalNonlinearity -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#OpticalNonlinearity">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#OpticalProperties"/>
+        <rdfs:comment>Optical nonlinearity in MOFs refers to the change in their optical response (e.g., refractive index, absorption) with varying light intensity, enabling phenomena like second-harmonic generation or self-focusing.</rdfs:comment>
+        <rdfs:label>Optical Nonlinearity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#OpticalProperties -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#OpticalProperties">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#Properties"/>
+        <rdfs:comment>Property of light and its interaction with substances or objects</rdfs:comment>
+        <rdfs:isDefinedBy>https://www.wikidata.org/wiki/Q2643571</rdfs:isDefinedBy>
+        <rdfs:label>Optical Properties</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#OpticalTransparency -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#OpticalTransparency">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#OpticalProperties"/>
+        <rdfs:comment>Optical transparency in MOFs refers to their ability to allow light to pass through with minimal absorption or scattering, making them suitable for optical applications.</rdfs:comment>
+        <rdfs:label>Optical Transparency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#Optoelectronics -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#Optoelectronics">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33232"/>
+        <rdfs:comment>Enabling light absorption, emission, or modulation in devices through materials with tunable electronic and photonic properties.</rdfs:comment>
+        <rdfs:isDefinedBy>https://www.wikidata.org/wiki/Q193091</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#OrganicLinker -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#OrganicLinker">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/nfdi4cat/voc4cat_0007247"/>
+        <rdfs:comment>Molecules that contain functional groups capable of coordinating with metal cations, forming the bridging components of metal-organic frameworks (MOFs).</rdfs:comment>
+        <rdfs:label>Organic Linker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#Organosilanes -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#Organosilanes">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#OrganicLinker"/>
+        <rdfs:comment>Organosilanes are organic compounds containing a silicon atom bonded to organic groups, often used as linkers or surface modifiers in MOF synthesis to enhance the framework&apos;s stability, hydrophobicity, and functionality, particularly in composite materials.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#OxygenStorage -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#OxygenStorage">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#GasStorageAndSeperation"/>
+        <rdfs:comment>Reversibly capturing and releasing oxygen using materials with high adsorption capacity and chemical stability for controlled delivery.</rdfs:comment>
+        <rdfs:label>Oxygen Storage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#Paramagnetism -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#Paramagnetism">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#MagneticProperties"/>
+        <rdfs:comment>Weak, attractive magnetism possessed by most elements and some compounds</rdfs:comment>
+        <rdfs:isDefinedBy>https://www.wikidata.org/wiki/Q188479</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#Pebbles -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#Pebbles">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#AggregateStructures"/>
+        <rdfs:comment>Refers to a rounded, smooth-surfaced morphology resembling small stones or pebbles, typically indicating uniform particle aggregation.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#PhenyleneLinkers -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#PhenyleneLinkers">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#OrganicLinker"/>
+        <rdfs:comment>Phenylene linkers are organic molecules containing a benzene ring (-C6H4-) that act as bridging units in MOF synthesis, providing rigidity and aromaticity, and enhancing the structural stability and electronic properties of the framework.</rdfs:comment>
+        <rdfs:label>Phenylene Linkers</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#PhosphoniumBasedIonicLiquids -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#PhosphoniumBasedIonicLiquids">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#Ionic"/>
+        <rdfs:comment>Phosphonium-based ionic liquids are ionic liquids containing phosphonium cations, often used in MOF synthesis for their high thermal stability, excellent solvation capabilities, and ability to dissolve metal salts and organic linkers, facilitating the formation of stable and functional metal-organic frameworks.</rdfs:comment>
+        <rdfs:label>Phosphonium based Ionic Liquids</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#PhotodegradationOfPollutants -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#PhotodegradationOfPollutants">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#EnvironmentalRemediation"/>
+        <rdfs:comment>Breaking down harmful contaminants using light-activated catalytic processes to convert them into less toxic substances.</rdfs:comment>
+        <rdfs:label>Photodegradation of Pollutants</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#Piezoelectricity -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#Piezoelectricity">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#ElectronicProperties"/>
+        <rdfs:comment>Electric charge generated in certain solids due to mechanical stress.</rdfs:comment>
+        <rdfs:isDefinedBy>https://www.wikidata.org/wiki/Q183759</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#Platelets -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#Platelets">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#FlatGeometries"/>
+        <rdfs:comment>Refers to a structure where the material forms flat, thin, and disc-like particles or crystals with a high aspect ratio, typically exhibiting a large surface area in comparison to thickness.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#PolarAproticSolvents -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#PolarAproticSolvents">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_48357"/>
+        <rdfs:comment>Polar aprotic solvents are highly polar solvents that do not donate hydrogen bonds (e.g., DMF, DMSO, acetonitrile), widely used in MOF synthesis to dissolve a variety of metal salts and organic linkers while enhancing reaction rates and coordination efficiency.</rdfs:comment>
+        <rdfs:label>Polar Aprotic Solvents</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#PolymericLinkers -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#PolymericLinkers">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#OrganicLinker"/>
+        <rdfs:comment>Polymeric linkers are long-chain organic molecules that contain repeating structural units, used in MOF synthesis to form extended, flexible networks that improve the framework&apos;s stability, porosity, and mechanical properties.</rdfs:comment>
+        <rdfs:label>Polymeric Linkers</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#PomponLike -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#PomponLike">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#AggregateStructures"/>
+        <rdfs:comment>Refers to a spherical, fluffy morphology composed of densely packed nanosheets or fibers radiating outward, resembling a pompon or dandelion.</rdfs:comment>
+        <rdfs:label>Pompon Like</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#PoreAperture -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#PoreAperture">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000973"/>
+        <rdfs:comment>Refers to the opening size at the entrance of a pore, which controls the accessibility of molecules into the internal pore structure of the material.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#PoreDiameter -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#PoreDiameter">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000973"/>
+        <rdfs:comment>Refers to the size of the individual pores or voids within a material, typically measured in nanometers or micrometers, which influences the material&apos;s ability to absorb or filter substances.</rdfs:comment>
+        <rdfs:label>Pore Diameter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#PoreVolume -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#PoreVolume">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000973"/>
+        <rdfs:comment>Refers to the total internal void space within a material, usually expressed in cubic centimeters per gram (cm³/g), indicating the material’s capacity to hold gases or liquids.</rdfs:comment>
+        <rdfs:label>Pore Volume</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#PorousNature -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#PorousNature">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000973"/>
+        <rdfs:comment>Refers to the classification of pore sizes within a material, typically categorized as microporous (&lt;2 nm), mesoporous (2–50 nm), or macroporous (&gt;50 nm).</rdfs:comment>
+        <rdfs:label>Porous Nature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#PostTransitionMetals -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#PostTransitionMetals">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25213"/>
+        <rdfs:comment>Elements located in the p-block of the periodic table, such as aluminum, gallium, and tin, which are often used as metal centers in MOFs due to their ability to form stable coordination bonds.</rdfs:comment>
+        <rdfs:label>Post Transition Metals</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#PrismaticShapes -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#PrismaticShapes">
+        <rdfs:subClassOf rdf:resource="http://purl.allotrope.org/ontologies/quality#AFQ_0000311"/>
+        <rdfs:comment>Refer to structures with a polygonal cross-section and uniform, elongated form along a specific axis, typically exhibiting regular, straight sides and sharp edges.</rdfs:comment>
+        <rdfs:label>Prismatic Shapes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#Properties -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#Properties">
+        <rdfs:comment>Properties are the measurable or observable characteristics of a material that define its physical, chemical, structural, or functional behavior.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#PyridiniumBasedIonicLiquids -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#PyridiniumBasedIonicLiquids">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#Ionic"/>
+        <rdfs:comment>Pyridinium-based ionic liquids are ionic liquids containing pyridinium cations, which are derived from pyridine, often used in MOF synthesis for their ability to dissolve metal salts and organic linkers, offering tunable properties that aid in the formation and stabilization of metal-organic frameworks.</rdfs:comment>
+        <rdfs:label>Pyridinium based Ionic Liquids</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#Quantasorb -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#Quantasorb">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#ApplicationInstruments"/>
+        <rdfs:comment>Instrument used to measure the surface area and pore characteristics of materials through gas adsorption techniques,</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#RareEarthMetals -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#RareEarthMetals">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25213"/>
+        <rdfs:comment>Rare earth metals are a group of 17 elements, including lanthanides and scandium and yttrium, known for their unique electronic, magnetic, and luminescent properties, often used as metal centers in MOFs for advanced applications.</rdfs:comment>
+        <rdfs:label>Rare Earth Metals</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#RhombicDodecahedron -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#RhombicDodecahedron">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#BasicPolyhedralShapes"/>
+        <rdfs:comment>Refers to a polyhedral structure with 12 rhombus-shaped faces, commonly seen in the arrangement of MOF crystals or particles.</rdfs:comment>
+        <rdfs:label>Rhombic Dodecahedron</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#Rhombicuboctahedron -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#Rhombicuboctahedron">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#BasicPolyhedralShapes"/>
+        <rdfs:comment>In geometry, the rhombicuboctahedron is an Archimedean solid with 26 faces, consisting of 8 equilateral triangles and 18 squares.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#Room -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#Room">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/nfdi4cat/voc4cat_0007013"/>
+        <rdfs:comment>Refers to MOF synthesis conducted at ambient conditions (typically around 20–25°C), enabling energy-efficient processes and preserving sensitive functional groups.</rdfs:comment>
+        <rdfs:label>Room Temperature Environment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#SelfCleaningFabrics -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#SelfCleaningFabrics">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002012"/>
+        <rdfs:comment>Textiles coated with functional finishes that repel water, dirt, or stains and break down contaminants, allowing surfaces to clean themselves with minimal effort.</rdfs:comment>
+        <rdfs:label>Self Cleaning Fabrics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#SemiconductingBehaviour -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#SemiconductingBehaviour">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#ElectronicProperties"/>
+        <rdfs:comment>Semiconducting behavior in MOFs refers to their ability to conduct electricity with a conductivity between that of conductors and insulators, often tunable via structural or compositional modifications.</rdfs:comment>
+        <rdfs:label>Semiconducting Behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#SoilRemediation -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#SoilRemediation">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001442"/>
+        <rdfs:comment>Soil remediation is an agricultural application involving the removal or neutralization of contaminants in soil to restore its health and productivity.</rdfs:comment>
+        <rdfs:label>Soil Remediation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#Solid -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#Solid">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001301"/>
+        <rdfs:comment>Methods involve the formation of MOFs through direct mixing and grinding of solid reactants without the use of solvents.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#SolidStateInstruments -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#SolidStateInstruments">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#SynthesisInstruments"/>
+        <rdfs:comment>A synthesis instrument designed for carrying out reactions in the solid phase, enabling precise control over temperature, pressure, and reaction environment without the use of solvents.</rdfs:comment>
+        <rdfs:label>Solid State Instruments</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#Sonochemical -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#Sonochemical">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#Liquid"/>
+        <rdfs:comment>Method that uses ultrasonic waves to induce acoustic cavitation, enhancing the reaction rates and formation of MOFs in solution.</rdfs:comment>
+        <rdfs:isDefinedBy>https://www.wikidata.org/wiki/Q65072669</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#SpecialGeometries -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#SpecialGeometries">
+        <rdfs:subClassOf rdf:resource="http://purl.allotrope.org/ontologies/quality#AFQ_0000311"/>
+        <rdfs:comment>Refer to unique shapes such as flower-like (radial symmetry), ring-like (circular with a central void), rod-like (elongated cylindrical), and star-like (multiple radiating points) structures.</rdfs:comment>
+        <rdfs:label>Special Geometries</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#SpectrometryInstruments -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#SpectrometryInstruments">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#CharacterizationInstruments"/>
+        <rdfs:comment>Devices that measure the interaction between matter and electromagnetic radiation to identify and quantify chemical substances.</rdfs:comment>
+        <rdfs:label>Spectrometry Instruments</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#SpectroscopicCharacterization -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#SpectroscopicCharacterization">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C62606"/>
+        <rdfs:comment>analyzing how a material interacts with electromagnetic radiation to determine its composition, and chemical environment.</rdfs:comment>
+        <rdfs:label>Spectroscopic Characterization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#SquarePrism -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#SquarePrism">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#PrismaticShapes"/>
+        <rdfs:comment>Refers to a three-dimensional structure with square faces at both ends, connected by rectangular or square sides, forming a uniform, box-like shape.</rdfs:comment>
+        <rdfs:label>Square Prism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#StructuralCharacterization -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#StructuralCharacterization">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C62606"/>
+        <rdfs:comment>Process of determining the arrangement of atoms or molecules in a material to reveal its crystal structure, phase composition, and long-range order.</rdfs:comment>
+        <rdfs:label>Structural Characterization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#StructuralMaterials -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#StructuralMaterials">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#MechanicalApplications"/>
+        <rdfs:comment>Providing lightweight yet strong frameworks for load-bearing applications through materials with high stiffness-to-weight ratios and customizable architectures.</rdfs:comment>
+        <rdfs:label>Structural Materials</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#StructuralProperties -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#StructuralProperties">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#Properties"/>
+        <rdfs:comment>Structural properties describe the spatial arrangement, dimensionality, and connectivity of components within a metal-organic framework.</rdfs:comment>
+        <rdfs:label>Structural Properties</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#SulfurBasedSolvents -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#SulfurBasedSolvents">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_48357"/>
+        <rdfs:comment>Sulfur-based solvents are solvents containing sulfur atoms in their structure (e.g., dimethyl sulfoxide [DMSO], sulfolane), commonly used in MOF synthesis for their high polarity, thermal stability, and strong solvating ability for both organic and inorganic components.</rdfs:comment>
+        <rdfs:label>Sulfur based Solvents</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#Supercapacitors -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#Supercapacitors">
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21159"/>
+        <rdfs:comment>Energy storage devices that deliver rapid charge/discharge and high power density, often enhanced by MOF-based electrode materials.</rdfs:comment>
+        <rdfs:label>Supercapacitors</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#Superparamagnetism -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#Superparamagnetism">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#MagneticProperties"/>
+        <rdfs:comment>Superparamagnetism in MOFs refers to a magnetic behavior where nanoscale magnetic domains spontaneously fluctuate, showing magnetization only in the presence of an external magnetic field without retaining it afterward.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#SurfaceTexture -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#SurfaceTexture">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000051"/>
+        <rdfs:comment>Refers to the characteristics of a material&apos;s outer surface, including its roughness, smoothness, patterns, and any microstructural features that influence its appearance and interactions with other surfaces.</rdfs:comment>
+        <rdfs:label>Surface Texture</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#SynthesisInstruments -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#SynthesisInstruments">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#Instruments"/>
+        <rdfs:comment>A device or system used to carry out chemical synthesis by precisely controlling reaction conditions such as temperature, pressure, and reagent flow.</rdfs:comment>
+        <rdfs:label>Synthesis Instruments</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#ThermalExpansion -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#ThermalExpansion">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#ThermalProperties"/>
+        <rdfs:comment>Tendency of matter to change volume in response to a change in temperature.</rdfs:comment>
+        <rdfs:isDefinedBy>https://www.wikidata.org/wiki/Q6583695</rdfs:isDefinedBy>
+        <rdfs:label>Thermal Expansion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#ThermalInstruments -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#ThermalInstruments">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#CharacterizationInstruments"/>
+        <rdfs:comment>Devices used to measure changes in a material&apos;s properties as a function of temperature, such as heat flow, weight loss, or phase transitions.</rdfs:comment>
+        <rdfs:label>Thermal Instruments</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#ThermalProperties -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#ThermalProperties">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#Properties"/>
+        <rdfs:comment>Thermal properties of MOFs refer to their behavior in response to temperature changes, including thermal stability, thermal conductivity, and heat capacity.</rdfs:comment>
+        <rdfs:label>Thermal Properties</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#ThermalStability -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#ThermalStability">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#ThermalProperties"/>
+        <rdfs:comment>Thermal stability in MOFs refers to their ability to maintain structural integrity and functional properties when exposed to elevated temperatures.</rdfs:comment>
+        <rdfs:label>Thermal Stability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#Thermochemical -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#Thermochemical">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#Solid"/>
+        <rdfs:comment>Method where MOFs are formed by applying controlled heat to drive chemical reactions between precursors, often in the absence of solvents.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#ThermoelectricProperties -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#ThermoelectricProperties">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#ThermalProperties"/>
+        <rdfs:comment>Thermoelectric properties in MOFs refer to their ability to convert temperature differences into electrical voltage and vice versa, governed by parameters like the Seebeck coefficient and electrical conductivity.</rdfs:comment>
+        <rdfs:label>Thermoelectric Properties</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#TopologicalCharacterization -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#TopologicalCharacterization">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C62606"/>
+        <rdfs:comment>analyzing the structural connectivity and spatial arrangement of a material’s framework to understand features like pore geometry, dimensionality, and network topology.</rdfs:comment>
+        <rdfs:label>Topological Characterization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#Topology -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#Topology">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#StructuralProperties"/>
+        <rdfs:comment>Refers to the connectivity and arrangement pattern of nodes (metal centers) and linkers in a framework, defining the overall network structure independent of geometric dimensions.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#ToxinRemoval -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#ToxinRemoval">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03530112"/>
+        <rdfs:comment>Eliminating harmful substances such as pesticides, mycotoxins, or heavy metals through selective adsorption and purification techniques to ensure food safety.</rdfs:comment>
+        <rdfs:label>Toxin Removal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#TransitionMetals -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#TransitionMetals">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25213"/>
+        <rdfs:comment>Transition metals are elements found in the d-block of the periodic table, characterized by their ability to form multiple oxidation states and coordinate with various ligands, commonly used as metal centers in MOFs for their stability and catalytic properties.</rdfs:comment>
+        <rdfs:label>Transition Metals</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#TriangularPrism -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#TriangularPrism">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#PrismaticShapes"/>
+        <rdfs:comment>A triangular prism is a three-dimensional polyhedron, made up of two triangular faces and three rectangular faces. It has 5 faces, 9 edges, and 6 vertices. The 2 bases are in the shape of a triangle and the other 3 faces are shaped like a rectangle.</rdfs:comment>
+        <rdfs:label>Triangular Prism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#Upconversion -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#Upconversion">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#OpticalProperties"/>
+        <rdfs:comment>Upconversion in MOFs refers to the process where lower-energy photons (e.g., infrared light) are absorbed and subsequently emitted as higher-energy photons (e.g., visible or ultraviolet light).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#UrchinLike -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#UrchinLike">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#SpecialGeometries"/>
+        <rdfs:comment>Refers to a structure with spiky, radial protrusions extending outward from a central core, resembling the appearance of a sea urchin.</rdfs:comment>
+        <rdfs:label>Urchin Like</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#VerticallyAlignedArray -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#VerticallyAlignedArray">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#SpecialGeometries"/>
+        <rdfs:comment>Rfers to a structured arrangement where particles, molecules, or components are organized in a linear, vertical orientation, typically forming a column-like or stacked configuration.</rdfs:comment>
+        <rdfs:label>Vertically Aligned Array</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#WaterPurification -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#WaterPurification">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#EnvironmentalRemediation"/>
+        <rdfs:comment>Process of removing impurities from water</rdfs:comment>
+        <rdfs:isDefinedBy>https://www.wikidata.org/wiki/Q1463025</rdfs:isDefinedBy>
+        <rdfs:label>Water Purification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#WireLike -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#WireLike">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#SpecialGeometries"/>
+        <rdfs:comment>Refers to a structure that is elongated, thin, and cylindrical, resembling the shape of a wire, often with uniform or tapered dimensions.</rdfs:comment>
+        <rdfs:label>Wire Like</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#XRayInstruments -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#XRayInstruments">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#CharacterizationInstruments"/>
+        <rdfs:comment>Analytical devices that use X-ray radiation to probe the structure, composition, and properties of materials through techniques such as diffraction, fluorescence, or absorption.</rdfs:comment>
+        <rdfs:label>XRay Instruments</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#ZincIonSensors -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#ZincIonSensors">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#LiquidSensors"/>
+        <rdfs:comment>A liquid sensor that selectively measures zinc (Zn²⁺) ions by translating their chemical interaction into a detectable signal.</rdfs:comment>
+        <rdfs:label>Zinc Ion Sensors</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#2D -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#2D">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25483"/>
+        <rdfs:comment>2D structure describes a framework with a two-dimensional layered arrangement that extends primarily in two spatial directions.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#3D -->
+
+    <owl:Class rdf:about="http://www.mofontology.amrita.edu/terms#3D">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25483"/>
+        <rdfs:comment>3D structure is a structural property where the framework extends in all three spatial dimensions, forming a fully connected, porous network.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/ThermalConductivity -->
+
+    <owl:Class rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/ThermalConductivity">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#ThermalProperties"/>
+        <rdfs:comment>Termal conductivity indicates the ability of a material to conduct heat.</rdfs:comment>
+        <rdfs:isDefinedBy>https://www.wikidata.org/wiki/Q487005</rdfs:isDefinedBy>
+        <rdfs:label>Thermal Conductivity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-PWR#Electronic_Equipment_Instruments_And_Components -->
+
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-PWR#Electronic_Equipment_Instruments_And_Components">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#CharacterizationInstruments"/>
+        <rdfs:comment>Industrial sector of Electronic Equipment, Instruments and Components.</rdfs:comment>
+        <rdfs:label>Electronic Instruments</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-PWR#Resistance -->
+
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-PWR#Resistance">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#ElectrochemicalProperties"/>
+        <rdfs:comment>The degree to which a substance prevents the flow of an electric current through it</rdfs:comment>
+        <rdfs:label>Resistance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/emmo/domain/characterisation-methodology/chameo#BrunauerEmmettTellerMethod -->
+
+    <owl:Class rdf:about="https://w3id.org/emmo/domain/characterisation-methodology/chameo#BrunauerEmmettTellerMethod">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001407"/>
+        <rdfs:comment>A technique used to measure the specific surface area of porous materials by analyzing the adsorption of gas molecules onto the material&apos;s surface.</rdfs:comment>
+        <rdfs:label>BET</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/i40/sto#Sensing -->
+
+    <owl:Class rdf:about="https://w3id.org/i40/sto#Sensing">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33232"/>
+        <rdfs:comment>The concern of being able to measure values from a defined environment.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/nfdi4cat/voc4cat_0000008 -->
+
+    <owl:Class rdf:about="https://w3id.org/nfdi4cat/voc4cat_0000008">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#StructuralProperties"/>
+        <rdfs:comment>The degree of a three-dimensional structural order of atoms which constitute the crystal lattice of a material.</rdfs:comment>
+        <rdfs:label>Crystallinity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/nfdi4cat/voc4cat_0000009 -->
+
+    <owl:Class rdf:about="https://w3id.org/nfdi4cat/voc4cat_0000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000973"/>
+        <rdfs:comment>The range of pore sizes in a material.</rdfs:comment>
+        <rdfs:label>Pore Size Distribution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/nfdi4cat/voc4cat_0000045 -->
+
+    <owl:Class rdf:about="https://w3id.org/nfdi4cat/voc4cat_0000045">
+        <rdfs:comment>The process by which one or more chemical reactions are performed with the aim of converting a reactant or starting material into a product or multiple products.</rdfs:comment>
+        <rdfs:label>Synthesis Parameters</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/nfdi4cat/voc4cat_0000069 -->
+
+    <owl:Class rdf:about="https://w3id.org/nfdi4cat/voc4cat_0000069">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#SpectrometryInstruments"/>
+        <rdfs:comment>A spectroscopy technique studying the vibrational modes of molecules, by measuring the intensity and frequency of scattered by the sample of monochromatic light.</rdfs:comment>
+        <rdfs:label>RAMAN</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/nfdi4cat/voc4cat_0000071 -->
+
+    <owl:Class rdf:about="https://w3id.org/nfdi4cat/voc4cat_0000071">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#ThermalInstruments"/>
+        <rdfs:comment>A thermal analysis technique which compares the heat flow in a sample and a reference material under controlled applied temperature profiles.</rdfs:comment>
+        <rdfs:label>DSC</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/nfdi4cat/voc4cat_0000072 -->
+
+    <owl:Class rdf:about="https://w3id.org/nfdi4cat/voc4cat_0000072">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#ThermalInstruments"/>
+        <rdfs:comment>A thermal analysis technique used to measure the change of a sample&apos;s mass under the influence of controlled applied temperature profiles.</rdfs:comment>
+        <rdfs:label>TGA</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/nfdi4cat/voc4cat_0000075 -->
+
+    <owl:Class rdf:about="https://w3id.org/nfdi4cat/voc4cat_0000075">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#MicroscopyInstruments"/>
+        <rdfs:comment>An electron microscopy technique that produces high-resolution images under high magnification of a sample&apos;s surface by assessing the secondary and back-scattered electrons produced by a focused electron beam.</rdfs:comment>
+        <rdfs:label>SEM</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/nfdi4cat/voc4cat_0000079 -->
+
+    <owl:Class rdf:about="https://w3id.org/nfdi4cat/voc4cat_0000079">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#SpectrometryInstruments"/>
+        <rdfs:comment>A technique used to measure the absorption, transmission or reflectance of light by a sample in the ultraviolet and visible regions of the electromagnetic spectrum.</rdfs:comment>
+        <rdfs:label>UV Visible</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/nfdi4cat/voc4cat_0000080 -->
+
+    <owl:Class rdf:about="https://w3id.org/nfdi4cat/voc4cat_0000080">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#SpectrometryInstruments"/>
+        <rdfs:comment>A spectroscopic technique used to study the vibrational modes of chemical bonds of a sample using infrared radiation.</rdfs:comment>
+        <rdfs:label>FTIR</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/nfdi4cat/voc4cat_0000081 -->
+
+    <owl:Class rdf:about="https://w3id.org/nfdi4cat/voc4cat_0000081">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C78875"/>
+        <rdfs:comment>The study of physical adsorption of gas molecules on a solid surface for the calculation of the specific surface area of materials.</rdfs:comment>
+        <rdfs:label>BET Analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/nfdi4cat/voc4cat_0007001 -->
+
+    <owl:Class rdf:about="https://w3id.org/nfdi4cat/voc4cat_0007001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOP_0000781"/>
+        <rdfs:comment>A process during which a chemical reaction is accelerated by the presence of a catalyst in a different phase than the reactant. The reaction generally proceeds at the interface.</rdfs:comment>
+        <rdfs:label>Hetergenous Catalysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/nfdi4cat/voc4cat_0007002 -->
+
+    <owl:Class rdf:about="https://w3id.org/nfdi4cat/voc4cat_0007002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOP_0000781"/>
+        <rdfs:comment>A process, during which elevated temperature is applied to increase the reaction rate of a reaction in presence of a catalyst.</rdfs:comment>
+        <rdfs:label>Thermal Catalysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/nfdi4cat/voc4cat_0007013 -->
+
+    <owl:Class rdf:about="https://w3id.org/nfdi4cat/voc4cat_0007013">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/nfdi4cat/voc4cat_0000045"/>
+        <rdfs:comment>The temperature at which a chemical reaction is happening.</rdfs:comment>
+        <rdfs:label>Temperature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/nfdi4cat/voc4cat_0007017 -->
+
+    <owl:Class rdf:about="https://w3id.org/nfdi4cat/voc4cat_0007017">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#ApplicationInstruments"/>
+        <rdfs:comment>An apparatus or system designed for the controlled execution of reactions, encompassing a wide range of processes including chemical, nuclear, biochemical, or other physical transformations.</rdfs:comment>
+        <rdfs:label>Reactor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/nfdi4cat/voc4cat_0007230 -->
+
+    <owl:Class rdf:about="https://w3id.org/nfdi4cat/voc4cat_0007230">
+        <rdfs:subClassOf rdf:resource="http://www.mofontology.amrita.edu/terms#CharacterizationInstruments"/>
+        <rdfs:comment>The collection of instruments and devices used in an electochemical reaction. Can include electrodes, flow cells, beaker, does not include the electrochemical environment.</rdfs:comment>
+        <rdfs:label>Electrochemical Instruments</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/nfdi4cat/voc4cat_0007244 -->
+
+    <owl:Class rdf:about="https://w3id.org/nfdi4cat/voc4cat_0007244">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/nfdi4cat/voc4cat_0000045"/>
+        <rdfs:comment>The measure of the amount of dissolved material (solute) in a solution.</rdfs:comment>
+        <rdfs:label>Concentration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/nfdi4cat/voc4cat_0007247 -->
+
+    <owl:Class rdf:about="https://w3id.org/nfdi4cat/voc4cat_0007247">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/nfdi4cat/voc4cat_0000045"/>
+        <rdfs:comment>The dissolved species (e.g., a salt) in a solution</rdfs:comment>
+        <rdfs:label>Solute</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#BiomedicalEngineering -->
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#BiomedicalEngineering">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33232"/>
+        <rdfs:comment>Biomedical engineering (BME) or medical engineering is the application of engineering principles and design concepts to medicine and biology for healthcare purposes (e.g. diagnostic or therapeutic).</rdfs:comment>
+        <rdfs:label>Biomedical Engineering</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q389137 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q389137">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17771"/>
+        <rdfs:comment>Exchange of ions between two electrolytes or between an electrolyte solution and a complex.</rdfs:comment>
+        <rdfs:label>Ion Exchange</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#autoclave_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#autoclave_5">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002166"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#azole_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#azole_1">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHEBI_68452"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#azole_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#azole_2">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHEBI_68452"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#azole_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#azole_3">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHEBI_68452"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#azole_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#azole_4">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHEBI_68452"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#azole_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#azole_5">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHEBI_68452"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#bet_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#bet_1">
+        <rdf:type rdf:resource="https://w3id.org/emmo/domain/characterisation-methodology/chameo#BrunauerEmmettTellerMethod"/>
+        <terms:hasRange>1200 to 1500</terms:hasRange>
+        <terms:unit>m2/g</terms:unit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#bet_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#bet_2">
+        <rdf:type rdf:resource="https://w3id.org/emmo/domain/characterisation-methodology/chameo#BrunauerEmmettTellerMethod"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#bet_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#bet_3">
+        <rdf:type rdf:resource="https://w3id.org/emmo/domain/characterisation-methodology/chameo#BrunauerEmmettTellerMethod"/>
+        <terms:hasValues>1254.78, 1460.89, 1391.44, 1398.42</terms:hasValues>
+        <terms:unit>m2/g</terms:unit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#bet_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#bet_4">
+        <rdf:type rdf:resource="https://w3id.org/emmo/domain/characterisation-methodology/chameo#BrunauerEmmettTellerMethod"/>
+        <terms:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1003.2</terms:hasValue>
+        <terms:unit>m2/g</terms:unit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#bet_analysis_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#bet_analysis_1">
+        <rdf:type rdf:resource="https://w3id.org/nfdi4cat/voc4cat_0000081"/>
+        <terms:yields rdf:resource="http://www.mofontology.amrita.edu/terms#bet_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#bet_analysis_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#bet_analysis_2">
+        <rdf:type rdf:resource="https://w3id.org/nfdi4cat/voc4cat_0000081"/>
+        <terms:yields rdf:resource="http://www.mofontology.amrita.edu/terms#bet_2"/>
+        <terms:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1114.5</terms:hasValue>
+        <terms:unit>m2/g</terms:unit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#bet_analysis_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#bet_analysis_3">
+        <rdf:type rdf:resource="https://w3id.org/nfdi4cat/voc4cat_0000081"/>
+        <terms:employs rdf:resource="http://www.mofontology.amrita.edu/terms#bet_3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#bet_analysis_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#bet_analysis_4">
+        <rdf:type rdf:resource="https://w3id.org/nfdi4cat/voc4cat_0000081"/>
+        <terms:employs rdf:resource="http://www.mofontology.amrita.edu/terms#bet_4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#carbon_dioxide_sensors_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#carbon_dioxide_sensors_1">
+        <rdf:type rdf:resource="http://www.mofontology.amrita.edu/terms#CarbonDioxideSensors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#crystallinity_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#crystallinity_1">
+        <rdf:type rdf:resource="https://w3id.org/nfdi4cat/voc4cat_0000008"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#dsc_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#dsc_4">
+        <rdf:type rdf:resource="https://w3id.org/nfdi4cat/voc4cat_0000071"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#fesem_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#fesem_1">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000074"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#fesem_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#fesem_2">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000074"/>
+        <terms:yields rdf:resource="http://www.mofontology.amrita.edu/terms#rod_like_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#fesem_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#fesem_4">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000074"/>
+        <terms:yields rdf:resource="http://www.mofontology.amrita.edu/terms#particle_size_4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#ftir_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#ftir_3">
+        <rdf:type rdf:resource="https://w3id.org/nfdi4cat/voc4cat_0000080"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#ftir_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#ftir_4">
+        <rdf:type rdf:resource="https://w3id.org/nfdi4cat/voc4cat_0000080"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#ftir_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#ftir_5">
+        <rdf:type rdf:resource="https://w3id.org/nfdi4cat/voc4cat_0000080"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#gas_seperation_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#gas_seperation_2">
+        <rdf:type rdf:resource="http://www.mofontology.amrita.edu/terms#GasStorageAndSeperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#gas_seperation_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#gas_seperation_4">
+        <rdf:type rdf:resource="http://www.mofontology.amrita.edu/terms#GasStorageAndSeperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#gas_seperation_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#gas_seperation_5">
+        <rdf:type rdf:resource="http://www.mofontology.amrita.edu/terms#GasStorageAndSeperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#hybrid_porous_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#hybrid_porous_2">
+        <rdf:type rdf:resource="http://www.mofontology.amrita.edu/terms#HybridPorous"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#hydrothermal_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#hydrothermal_3">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001377"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#inorganic_salts_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#inorganic_salts_1">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24839"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#langmuir_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#langmuir_4">
+        <rdf:type rdf:resource="http://www.mofontology.amrita.edu/terms#Langmuir"/>
+        <terms:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1138</terms:hasValue>
+        <terms:unit>m2/g</terms:unit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#langmuir_analysis_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#langmuir_analysis_4">
+        <rdf:type rdf:resource="http://www.mofontology.amrita.edu/terms#LangmuirAnalysis"/>
+        <terms:employs rdf:resource="http://www.mofontology.amrita.edu/terms#langmuir_4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#methanol_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#methanol_1">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17790"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#methanol_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#methanol_3">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17790"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#methanol_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#methanol_4">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17790"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#methanol_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#methanol_5">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17790"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#microporous_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#microporous_3">
+        <rdf:type rdf:resource="http://www.mofontology.amrita.edu/terms#Microporous"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#microporous_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#microporous_4">
+        <rdf:type rdf:resource="http://www.mofontology.amrita.edu/terms#Microporous"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#morphological_characterization_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#morphological_characterization_1">
+        <rdf:type rdf:resource="http://www.mofontology.amrita.edu/terms#MorphologicalCharacteirization"/>
+        <terms:employs rdf:resource="http://www.mofontology.amrita.edu/terms#bet_analysis_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#morphological_characterization_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#morphological_characterization_2">
+        <rdf:type rdf:resource="http://www.mofontology.amrita.edu/terms#MorphologicalCharacteirization"/>
+        <terms:employs rdf:resource="http://www.mofontology.amrita.edu/terms#fesem_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#morphological_characterization_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#morphological_characterization_3">
+        <rdf:type rdf:resource="http://www.mofontology.amrita.edu/terms#MorphologicalCharacteirization"/>
+        <terms:employs rdf:resource="http://www.mofontology.amrita.edu/terms#sem_3"/>
+        <terms:employs rdf:resource="http://www.mofontology.amrita.edu/terms#tem_3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#morphological_characterization_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#morphological_characterization_4">
+        <rdf:type rdf:resource="http://www.mofontology.amrita.edu/terms#MorphologicalCharacteirization"/>
+        <terms:employs rdf:resource="http://www.mofontology.amrita.edu/terms#fesem_4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#morphological_characterization_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#morphological_characterization_5">
+        <rdf:type rdf:resource="http://www.mofontology.amrita.edu/terms#MorphologicalCharacteirization"/>
+        <terms:employs rdf:resource="http://www.mofontology.amrita.edu/terms#sem_5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#particle_size_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#particle_size_1">
+        <rdf:type rdf:resource="http://purl.allotrope.org/ontologies/result#AFR_0002027"/>
+        <terms:hasValues>32, 53, 70</terms:hasValues>
+        <terms:unit>nm</terms:unit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#particle_size_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#particle_size_4">
+        <rdf:type rdf:resource="http://purl.allotrope.org/ontologies/result#AFR_0002027"/>
+        <terms:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">60</terms:hasValue>
+        <terms:unit>nm</terms:unit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#particle_size_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#particle_size_5">
+        <rdf:type rdf:resource="http://purl.allotrope.org/ontologies/result#AFR_0002027"/>
+        <terms:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</terms:hasValue>
+        <terms:unit>micrometer</terms:unit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#pore_aperture_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#pore_aperture_3">
+        <rdf:type rdf:resource="http://www.mofontology.amrita.edu/terms#PoreAperture"/>
+        <terms:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.34</terms:hasValue>
+        <terms:unit>nm</terms:unit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#pore_diameter_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#pore_diameter_2">
+        <rdf:type rdf:resource="http://www.mofontology.amrita.edu/terms#PoreDiameter"/>
+        <terms:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.01</terms:hasValue>
+        <terms:unit>nm</terms:unit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#pore_diameter_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#pore_diameter_4">
+        <rdf:type rdf:resource="http://www.mofontology.amrita.edu/terms#PoreDiameter"/>
+        <terms:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.83</terms:hasValue>
+        <terms:unit>nm</terms:unit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#pore_volume_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#pore_volume_4">
+        <rdf:type rdf:resource="http://www.mofontology.amrita.edu/terms#PoreVolume"/>
+        <terms:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.4607</terms:hasValue>
+        <terms:unit>cm2/g</terms:unit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#rhombic_dodecahedron_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#rhombic_dodecahedron_5">
+        <rdf:type rdf:resource="http://www.mofontology.amrita.edu/terms#RhombicDodecahedron"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#rod_like_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#rod_like_2">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/NCIT_C64352"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#room_temperature_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#room_temperature_4">
+        <rdf:type rdf:resource="http://www.mofontology.amrita.edu/terms#Room"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#sem_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#sem_3">
+        <rdf:type rdf:resource="https://w3id.org/nfdi4cat/voc4cat_0000075"/>
+        <terms:yields rdf:resource="http://www.mofontology.amrita.edu/terms#vertically_aligned_array_3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#sem_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#sem_5">
+        <rdf:type rdf:resource="https://w3id.org/nfdi4cat/voc4cat_0000075"/>
+        <terms:yields rdf:resource="http://www.mofontology.amrita.edu/terms#particle_size_5"/>
+        <terms:yields rdf:resource="http://www.mofontology.amrita.edu/terms#rhombic_dodecahedron_5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#solvothermal_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#solvothermal_3">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001458"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#solvothermal_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#solvothermal_5">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001458"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#structural_characterization_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#structural_characterization_1">
+        <rdf:type rdf:resource="http://www.mofontology.amrita.edu/terms#StructuralCharacterization"/>
+        <terms:employs rdf:resource="http://www.mofontology.amrita.edu/terms#xrpd_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#structural_characterization_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#structural_characterization_2">
+        <rdf:type rdf:resource="http://www.mofontology.amrita.edu/terms#StructuralCharacterization"/>
+        <terms:employs rdf:resource="http://www.mofontology.amrita.edu/terms#xrpd_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#structural_characterization_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#structural_characterization_3">
+        <rdf:type rdf:resource="http://www.mofontology.amrita.edu/terms#StructuralCharacterization"/>
+        <terms:employs rdf:resource="http://www.mofontology.amrita.edu/terms#ftir_3"/>
+        <terms:employs rdf:resource="http://www.mofontology.amrita.edu/terms#xrd_3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#structural_characterization_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#structural_characterization_4">
+        <rdf:type rdf:resource="http://www.mofontology.amrita.edu/terms#StructuralCharacterization"/>
+        <terms:employs rdf:resource="http://www.mofontology.amrita.edu/terms#ftir_4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#structural_characterization_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#structural_characterization_5">
+        <rdf:type rdf:resource="http://www.mofontology.amrita.edu/terms#StructuralCharacterization"/>
+        <terms:employs rdf:resource="http://www.mofontology.amrita.edu/terms#ftir_5"/>
+        <terms:employs rdf:resource="http://www.mofontology.amrita.edu/terms#xrd_5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#tem_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#tem_3">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000080"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#tga_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#tga_4">
+        <rdf:type rdf:resource="https://w3id.org/nfdi4cat/voc4cat_0000072"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#thermal_analysis_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#thermal_analysis_4">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000681"/>
+        <terms:employs rdf:resource="http://www.mofontology.amrita.edu/terms#dsc_4"/>
+        <terms:employs rdf:resource="http://www.mofontology.amrita.edu/terms#tga_4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#vertically_aligned_array_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#vertically_aligned_array_3">
+        <rdf:type rdf:resource="http://www.mofontology.amrita.edu/terms#VerticallyAlignedArray"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#xrd_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#xrd_3">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000156"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#xrd_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#xrd_5">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000156"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#xrpd_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#xrpd_1">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000404"/>
+        <terms:yields rdf:resource="http://www.mofontology.amrita.edu/terms#crystallinity_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#xrpd_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#xrpd_2">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000404"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#zif-8_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#zif-8_1">
+        <rdf:type rdf:resource="http://www.mofontology.amrita.edu/terms#MOF"/>
+        <terms:hasApplications rdf:resource="http://www.mofontology.amrita.edu/terms#carbon_dioxide_sensors_1"/>
+        <terms:hasProperties rdf:resource="http://www.mofontology.amrita.edu/terms#particle_size_1"/>
+        <terms:isAnalyzedBy rdf:resource="http://www.mofontology.amrita.edu/terms#fesem_1"/>
+        <terms:isProducedBy rdf:resource="http://www.mofontology.amrita.edu/terms#azole_1"/>
+        <terms:isProducedBy rdf:resource="http://www.mofontology.amrita.edu/terms#inorganic_salts_1"/>
+        <terms:isProducedBy rdf:resource="http://www.mofontology.amrita.edu/terms#methanol_1"/>
+        <terms:isProducedBy rdf:resource="http://www.mofontology.amrita.edu/terms#zinc_1"/>
+        <terms:undergoes rdf:resource="http://www.mofontology.amrita.edu/terms#bet_analysis_1"/>
+        <terms:undergoes rdf:resource="http://www.mofontology.amrita.edu/terms#structural_characterization_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#zif-8_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#zif-8_2">
+        <rdf:type rdf:resource="http://www.mofontology.amrita.edu/terms#MOF"/>
+        <terms:hasApplications rdf:resource="http://www.mofontology.amrita.edu/terms#gas_seperation_2"/>
+        <terms:hasProperties rdf:resource="http://www.mofontology.amrita.edu/terms#hybrid_porous_2"/>
+        <terms:hasProperties rdf:resource="http://www.mofontology.amrita.edu/terms#pore_diameter_2"/>
+        <terms:hasProperties rdf:resource="http://www.mofontology.amrita.edu/terms#3d_1"/>
+        <terms:isProducedBy rdf:resource="http://www.mofontology.amrita.edu/terms#azole_2"/>
+        <terms:isProducedBy rdf:resource="http://www.mofontology.amrita.edu/terms#zinc_2"/>
+        <terms:undergoes rdf:resource="http://www.mofontology.amrita.edu/terms#bet_analysis_2"/>
+        <terms:undergoes rdf:resource="http://www.mofontology.amrita.edu/terms#morphological_characterization_2"/>
+        <terms:undergoes rdf:resource="http://www.mofontology.amrita.edu/terms#structural_characterization_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#zif-8_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#zif-8_3">
+        <rdf:type rdf:resource="http://www.mofontology.amrita.edu/terms#MOF"/>
+        <terms:hasApplications rdf:resource="http://www.mofontology.amrita.edu/terms#gas_seperation_2"/>
+        <terms:hasProperties rdf:resource="http://www.mofontology.amrita.edu/terms#microporous_3"/>
+        <terms:hasProperties rdf:resource="http://www.mofontology.amrita.edu/terms#pore_aperture_3"/>
+        <terms:isProducedBy rdf:resource="http://www.mofontology.amrita.edu/terms#azole_3"/>
+        <terms:isProducedBy rdf:resource="http://www.mofontology.amrita.edu/terms#hydrothermal_3"/>
+        <terms:isProducedBy rdf:resource="http://www.mofontology.amrita.edu/terms#methanol_3"/>
+        <terms:isProducedBy rdf:resource="http://www.mofontology.amrita.edu/terms#solvothermal_3"/>
+        <terms:isProducedBy rdf:resource="http://www.mofontology.amrita.edu/terms#zinc_3"/>
+        <terms:undergoes rdf:resource="http://www.mofontology.amrita.edu/terms#bet_analysis_3"/>
+        <terms:undergoes rdf:resource="http://www.mofontology.amrita.edu/terms#morphological_characterization_3"/>
+        <terms:undergoes rdf:resource="http://www.mofontology.amrita.edu/terms#structural_characterization_3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#zif-8_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#zif-8_4">
+        <rdf:type rdf:resource="http://www.mofontology.amrita.edu/terms#MOF"/>
+        <terms:hasApplications rdf:resource="http://www.mofontology.amrita.edu/terms#gas_seperation_4"/>
+        <terms:hasProperties rdf:resource="http://www.mofontology.amrita.edu/terms#microporous_4"/>
+        <terms:hasProperties rdf:resource="http://www.mofontology.amrita.edu/terms#pore_diameter_4"/>
+        <terms:hasProperties rdf:resource="http://www.mofontology.amrita.edu/terms#pore_volume_4"/>
+        <terms:hasProperties rdf:resource="http://www.mofontology.amrita.edu/terms#3d_4"/>
+        <terms:isProducedBy rdf:resource="http://www.mofontology.amrita.edu/terms#azole_4"/>
+        <terms:isProducedBy rdf:resource="http://www.mofontology.amrita.edu/terms#methanol_4"/>
+        <terms:isProducedBy rdf:resource="http://www.mofontology.amrita.edu/terms#room_temperature_4"/>
+        <terms:isProducedBy rdf:resource="http://www.mofontology.amrita.edu/terms#zinc_4"/>
+        <terms:undergoes rdf:resource="http://www.mofontology.amrita.edu/terms#bet_analysis_4"/>
+        <terms:undergoes rdf:resource="http://www.mofontology.amrita.edu/terms#langmuir_analysis_4"/>
+        <terms:undergoes rdf:resource="http://www.mofontology.amrita.edu/terms#morphological_characterization_4"/>
+        <terms:undergoes rdf:resource="http://www.mofontology.amrita.edu/terms#structural_characterization_4"/>
+        <terms:undergoes rdf:resource="http://www.mofontology.amrita.edu/terms#thermal_analysis_4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#zif-8_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#zif-8_5">
+        <rdf:type rdf:resource="http://www.mofontology.amrita.edu/terms#MOF"/>
+        <terms:hasApplications rdf:resource="http://www.mofontology.amrita.edu/terms#gas_seperation_5"/>
+        <terms:hasProperties rdf:resource="http://www.mofontology.amrita.edu/terms#3d_5"/>
+        <terms:isProducedBy rdf:resource="http://www.mofontology.amrita.edu/terms#autoclave_5"/>
+        <terms:isProducedBy rdf:resource="http://www.mofontology.amrita.edu/terms#azole_5"/>
+        <terms:isProducedBy rdf:resource="http://www.mofontology.amrita.edu/terms#methanol_5"/>
+        <terms:isProducedBy rdf:resource="http://www.mofontology.amrita.edu/terms#solvothermal_5"/>
+        <terms:isProducedBy rdf:resource="http://www.mofontology.amrita.edu/terms#zinc_5"/>
+        <terms:undergoes rdf:resource="http://www.mofontology.amrita.edu/terms#morphological_characterization_5"/>
+        <terms:undergoes rdf:resource="http://www.mofontology.amrita.edu/terms#structural_characterization_5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#zinc_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#zinc_1">
+        <rdf:type rdf:resource="http://www.mofontology.amrita.edu/terms#TransitionMetals"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#zinc_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#zinc_2">
+        <rdf:type rdf:resource="http://www.mofontology.amrita.edu/terms#TransitionMetals"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#zinc_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#zinc_3">
+        <rdf:type rdf:resource="http://www.mofontology.amrita.edu/terms#TransitionMetals"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#zinc_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#zinc_4">
+        <rdf:type rdf:resource="http://www.mofontology.amrita.edu/terms#TransitionMetals"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#zinc_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#zinc_5">
+        <rdf:type rdf:resource="http://www.mofontology.amrita.edu/terms#TransitionMetals"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#3d_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#3d_1">
+        <rdf:type rdf:resource="http://www.mofontology.amrita.edu/terms#3D"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#3d_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#3d_4">
+        <rdf:type rdf:resource="http://www.mofontology.amrita.edu/terms#3D"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mofontology.amrita.edu/terms#3d_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mofontology.amrita.edu/terms#3d_5">
+        <rdf:type rdf:resource="http://www.mofontology.amrita.edu/terms#3D"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
